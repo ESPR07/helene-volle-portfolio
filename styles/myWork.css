@@ -54,7 +54,7 @@ main {
 
 .image-grid {
     position: relative;
-    margin-top: 450px;
+    margin-top: 500px;
     margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -96,11 +96,11 @@ main {
 }
 
 .project2 {
-    background-image: url("/assets/images/a_new_little_life/04.webp");
+    background-image: url("/assets/images/the_small_lives_in_trondheim/01.webp");
 }
 
 .project3 {
-    background-image: url("/assets/images/a_new_little_life/14.webp");
+    background-image: url("/assets/images/colours_on_micro_level/01.webp");
 }
 
 @media screen and (max-width: 900px) {

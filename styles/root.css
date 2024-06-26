@@ -7,6 +7,7 @@
     --background: #F0DDBC;
     --content-color: #521F0B;
     --hover-color: #7A5445;
+    --active-color: #b99c91;
     --font: "roboto", 'Courier New', Courier, monospace;
 }
 
@@ -15,4 +16,31 @@ body{
     margin: 0;
     color: var(--content-color);
     font-family: var(--font);
+    background-color: var(--background);
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--content-color);
+    font-size: 1.1rem;
+}
+
+.active {
+    color: var(--active-color);
+    cursor: default;
 }

@@ -1,0 +1,133 @@
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+
+}
+
+main {
+    position: relative;
+}
+
+.greeting-box {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20%;
+    z-index: 1;
+}
+
+.greeting-box h1 {
+    font-size: clamp(1.3rem, 5vw, 2.5rem);
+}
+
+.greeting-box p {
+    font-size: clamp(1rem, 3vw, 1.3rem);
+}
+
+.greeting-box button {
+    height: 50px;
+    width: 50px;
+    background-image: url("/assets/icons/scroll-down.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--background);
+    border: none;
+}
+
+.greeting-box button:hover {
+    cursor: pointer;
+    animation: 1.3s infinite ease-in-out bounce;
+}
+
+.image-grid {
+    position: relative;
+    margin-top: 450px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-inline: 50px;
+    place-items: center;
+    z-index: 5;
+    background-color: var(--background);
+}
+
+.image-grid a {
+    width: 30vw;
+    height: 30vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+
+.project-info {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--background);
+    transition: opacity 0.3s ease-in;
+}
+
+.project-info:hover {
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+}
+
+.project1 {
+    background-image: url("/assets/images/the_artist/10.webp");
+}
+
+.project2 {
+    background-image: url("/assets/images/a_new_little_life/04.webp");
+}
+
+.project3 {
+    background-image: url("/assets/images/a_new_little_life/14.webp");
+}
+
+@media screen and (max-width: 900px) {
+    .greeting-box {
+        top: 15%;
+    }
+
+    .image-grid {
+        margin-top: 400px;
+        margin-inline: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .image-grid a {
+        width: 40vw;
+        height: 40vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .greeting-box {
+        top: 10%;
+    }
+
+    .image-grid a {
+        width: 90vw;
+        height: 90vw;
+    }
+    
+}

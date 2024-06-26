@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "roboto";
+    src: url("/styles/fonts/Roboto-Regular.ttf");
+}
+
+:root{
+    --background: #F0DDBC;
+    --content-color: #521F0B;
+    --hover-color: #7A5445;
+    --font: "roboto", 'Courier New', Courier, monospace;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    color: var(--content-color);
+    font-family: var(--font);
+}

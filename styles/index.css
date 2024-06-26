@@ -5,6 +5,7 @@ main {
 }
 
 .info {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,6 +80,23 @@ main {
     background-image: url("/assets/icons/instagram.svg");
 }
 
+.mail {
+    background-image: url("/assets/icons/mail.svg");
+}
+
+.credits {
+    position: absolute;
+    bottom: 5px;
+}
+
+.credits p {
+    font-size: 1rem;
+}
+
+.credits a {
+    color: var(--content-color);
+}
+
 .index-image {
     display: flex;
 }
@@ -101,6 +119,7 @@ main {
     .info {
         position: absolute;
         padding: 40px;
+        height: 89vh;
         color: var(--background);
     }
 
@@ -120,6 +139,14 @@ main {
 
     .instagram {
         background-image: url("/assets/icons/instagram-mobile.svg");
+    }
+
+    .mail {
+        background-image: url("/assets/icons/mail-mobile.svg");
+    }
+
+    .credits a {
+        color: var(--background);
     }
 }
 

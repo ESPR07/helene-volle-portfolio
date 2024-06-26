@@ -56,17 +56,18 @@ main {
     position: relative;
     margin-top: 500px;
     margin-bottom: 50px;
+    margin-inline: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    margin-inline: 50px;
     place-items: center;
+    justify-content: space-between;
     z-index: 5;
     background-color: var(--background);
 }
 
 .image-grid a {
-    width: 30vw;
+    width: 100%;
     height: 30vw;
     background-position: center;
     background-size: cover;
@@ -79,11 +80,22 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     color: var(--background);
     transition: opacity 0.3s ease-in;
+}
+
+.project-info h2 {
+    font-size: clamp(1.1rem, 2vw, 2rem);
+    margin-inline: 5px;
+}
+
+.project-info p {
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    margin-inline: 10%;
 }
 
 .project-info:hover {
@@ -103,6 +115,7 @@ main {
     background-image: url("/assets/images/colours_on_micro_level/01.webp");
 }
 
+
 @media screen and (max-width: 900px) {
     .greeting-box {
         top: 15%;
@@ -115,19 +128,21 @@ main {
     }
 
     .image-grid a {
-        width: 40vw;
-        height: 40vw;
+        height: 45vw;
+    }
+
+    .project-info {
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.3);
     }
 }
 
-@media screen and (max-width: 400px) {
-    .greeting-box {
-        top: 10%;
+@media screen and (max-width: 500px) {
+    .image-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .image-grid a {
-        width: 90vw;
-        height: 90vw;
+        height: 80vw;
     }
-    
 }

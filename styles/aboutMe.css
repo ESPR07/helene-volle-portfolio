@@ -1,3 +1,22 @@
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
 
 main{
     margin-top: 70px;
@@ -24,18 +43,27 @@ img{
     max-height: 70vh;
     height: 100%;
     object-fit: cover;
+    z-index: 10;
 }
 
-article{
+article {
+    z-index: 1;
     padding: 20px;
+    animation: 1s ease-in-out slide-in-right;
+}
+
+article:nth-of-type(2){
+    animation: 1s ease-in-out slide-in-left;
 }
 
 article h2{
+    text-align: center;
     font-size: clamp(1.3rem, 4vw, 2rem);
 }
 
 article p, article ul li{
     font-size: clamp(1rem, 2vw, 1.5rem);
+    text-align: start;
 }
 
 @media screen and (max-width:550px) {
@@ -45,6 +73,11 @@ article p, article ul li{
 
     article{
         padding: 0;
+        animation: none;
+    }
+
+    article:nth-last-of-type(2) {
+        animation: none;
     }
 
     .remove-in-mobile{

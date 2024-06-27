@@ -46,27 +46,6 @@ main p{
     cursor: pointer;
 }
 
-.span1 {
-    width: 32%;
-}
-
-
-.span2 {
-    width: 49%;
-}
-
-.span3 {
-    width: 100%;
-}
-
-.spanTest1 {
-    width: 60%;
-}
-
-.spanTest2 {
-    width: 39%;
-}
-
 .to-top{
     display: flex;
     position: fixed;
@@ -84,14 +63,6 @@ main p{
 @media screen and (max-width:550px) {
     main p {
         margin-inline: 10%;
-    }
-
-    .span2{
-        width: 100%;
-    }
-
-    .span1{
-        width: 100%;
     }
     
 }

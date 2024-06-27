@@ -8,20 +8,17 @@
                 {
                     "link": "/assets/images/a_new_little_life/01.webp",
                     "title": "Title",
-                    "alt": "Alternative Title",
-                    "prosent": 39
+                    "width": "39%"
                 },
                 {
                     "link": "/assets/images/a_new_little_life/02.webp",
                     "title": "Title",
-                    "alt": "Alternative Title",
-                    "prosent": 60
+                    "width": "60%"
                 },
                 {
                     "link": "/assets/images/a_new_little_life/03.webp",
                     "title": "Title",
-                    "alt": "Alternative Title",
-                    "prosent": 100
+                    "width": "100%"
                 }
 
             ]
@@ -34,7 +31,7 @@
                 {
                     "link": "/assets/images/colours_on_micro_level/01.webp",
                     "title": "Title",
-                    "alt": "Alternative Title"
+                    "width": "100%"
                 }
             ]
         }

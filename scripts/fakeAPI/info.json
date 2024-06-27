@@ -8,12 +8,20 @@
                 {
                     "link": "/assets/images/a_new_little_life/01.webp",
                     "title": "Title",
-                    "alt": "Alternative Title"
+                    "alt": "Alternative Title",
+                    "prosent": 39
                 },
                 {
                     "link": "/assets/images/a_new_little_life/02.webp",
                     "title": "Title",
-                    "alt": "Alternative Title"
+                    "alt": "Alternative Title",
+                    "prosent": 60
+                },
+                {
+                    "link": "/assets/images/a_new_little_life/03.webp",
+                    "title": "Title",
+                    "alt": "Alternative Title",
+                    "prosent": 100
                 }
 
             ]

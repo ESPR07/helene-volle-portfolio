@@ -1,14 +1,14 @@
 @font-face {
-    font-family: "roboto";
-    src: url("/styles/fonts/Roboto-Regular.ttf");
+    font-family: "bebasKai";
+    src: url("/styles/fonts/BebasKai.ttf");
 }
 
 :root{
-    --background: #F0DDBC;
-    --content-color: #521F0B;
+    --background: #f1e3d4;
+    --content-color: #663A10;
     --hover-color: #7A5445;
     --active-color: #b99c91;
-    --font: "roboto", 'Courier New', Courier, monospace;
+    --font: "bebasKai", 'Courier New', Courier, monospace;
 }
 
 html{

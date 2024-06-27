@@ -34,12 +34,12 @@ main p{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 1%;
+    gap: 0.5%;
 }
 
 .image-container img{
     object-fit: cover;
-    margin-top: 2vw;
+    margin-top: 1vw;
 }
 
 .image-container img:hover{
@@ -50,12 +50,21 @@ main p{
     width: 32%;
 }
 
+
 .span2 {
     width: 49%;
 }
 
 .span3 {
     width: 100%;
+}
+
+.spanTest1 {
+    width: 60%;
+}
+
+.spanTest2 {
+    width: 39%;
 }
 
 .to-top{

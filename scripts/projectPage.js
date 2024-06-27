@@ -41,7 +41,7 @@ async function renderHTML(){
     //Adding images
     const imageContainer = document.querySelector(".image-container");
 
-    for(let i=0; i<projectData.images.length;i++){
+    for(let i=1; i<projectData.images.length;i++){
         const imageData = projectData.images[i];
         const image = document.createElement("img");
 

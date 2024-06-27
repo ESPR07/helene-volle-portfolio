@@ -1,5 +1,4 @@
 
-
 async function getData(){
     const response = await fetch("/scripts/fakeAPI/info.json");
     
@@ -43,9 +42,18 @@ async function renderHTML(){
         
     }
     
-    
 }
 
-renderHTML()
+const scrollButton = document.querySelector(".greeting-box #scroll-button");
+console.log(scrollButton);
+scrollButton.addEventListener("click", scrollAnimation);
+
+function scrollAnimation(){
+    const imageGrid = document.querySelector(".image-grid");
+    imageGrid.scrollIntoView();
+  
+}
+
+renderHTML();
 
 

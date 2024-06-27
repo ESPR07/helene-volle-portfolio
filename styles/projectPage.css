@@ -1,0 +1,97 @@
+main{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.back-button {
+    width: 10%;
+    min-width: 100px;
+    height: 50px;
+    margin-left: 30px;
+    background-color: var(--background);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    color: var(--content-color);
+}
+
+.back-icon {
+    width: 50px;
+    height: 50px;
+    background-image: url("/assets/icons/back-button.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main p{
+    margin-inline: 20%;
+    font-size: 1.2rem;
+}
+
+.image-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5%;
+}
+
+.image-container img{
+    object-fit: cover;
+    margin-top: 1vw;
+}
+
+.image-container img:hover{
+    cursor: pointer;
+}
+
+.span1 {
+    width: 32%;
+}
+
+
+.span2 {
+    width: 49%;
+}
+
+.span3 {
+    width: 100%;
+}
+
+.spanTest1 {
+    width: 60%;
+}
+
+.spanTest2 {
+    width: 39%;
+}
+
+.to-top{
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+.to-top-icon{
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-image: url("/assets/icons/to-top.svg");
+    background-size: contain;
+}
+
+@media screen and (max-width:550px) {
+    main p {
+        margin-inline: 10%;
+    }
+
+    .span2{
+        width: 100%;
+    }
+
+    .span1{
+        width: 100%;
+    }
+    
+}

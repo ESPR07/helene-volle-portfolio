@@ -46,7 +46,6 @@ async function renderHTML(){
 
 //Animation that scrolls page on arrow button
 const scrollButton = document.querySelector(".greeting-box #scroll-button");
-console.log(scrollButton);
 scrollButton.addEventListener("click", scrollButtonAnimation);
 
 function scrollButtonAnimation(){
@@ -61,15 +60,11 @@ console.log(greetingBox);
 
 function fadeOnScroll(){
 
-
     if(document.documentElement.scrollTop > 200){
-        console.log("fade out");        
         greetingBox.className = "fade-out greeting-box";
-    } else if(document.documentElement.scrollTop > 50) {
-        console.log("fade half");        
+    } else if(document.documentElement.scrollTop > 50) {     
         greetingBox.className = "fade-half greeting-box";
     } else {
-        console.log("fade in");
         greetingBox.className = "fade-in greeting-box";
     }
 }

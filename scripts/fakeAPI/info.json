@@ -6,24 +6,86 @@
             "short_description": "This is the short description",
             "images": [
                 {
+                    "link": "/assets/images/a_new_little_life/12.webp",
+                    "title": "Project image",
+                    "width": "-"
+                },
+                {
+                    "link": "/assets/images/a_new_little_life/11.webp",
+                    "title": "Title",
+                    "width": "100%"
+                },
+                {
                     "link": "/assets/images/a_new_little_life/01.webp",
                     "title": "Title",
-                    "alt": "Alternative Title",
-                    "prosent": 39
+                    "width": "60%"
+                },
+                {
+                    "link": "/assets/images/a_new_little_life/09.webp",
+                    "title": "Title",
+                    "width": "39%"
+                },
+                {
+                    "link": "/assets/images/a_new_little_life/10.webp",
+                    "title": "Title",
+                    "width": "39%"
                 },
                 {
                     "link": "/assets/images/a_new_little_life/02.webp",
                     "title": "Title",
-                    "alt": "Alternative Title",
-                    "prosent": 60
+                    "width": "60%"
                 },
                 {
                     "link": "/assets/images/a_new_little_life/03.webp",
                     "title": "Title",
-                    "alt": "Alternative Title",
-                    "prosent": 100
+                    "width": "60%"
+                },
+                {
+                    "link": "/assets/images/a_new_little_life/08.webp",
+                    "title": "Title",
+                    "width": "39%"
+                },
+                {
+                    "link": "/assets/images/a_new_little_life/07.webp",
+                    "title": "Title",
+                    "width": "39%"
+                },
+                {
+                    "link": "/assets/images/a_new_little_life/04.webp",
+                    "title": "Title",
+                    "width": "60%"
+                },
+                {
+                    "link": "/assets/images/a_new_little_life/05.webp",
+                    "title": "Title",
+                    "width": "60%"
+                },
+                {
+                    "link": "/assets/images/a_new_little_life/06.webp",
+                    "title": "Title",
+                    "width": "39%"
+                },
+                {
+                    "link": "/assets/images/a_new_little_life/12.webp",
+                    "title": "Title",
+                    "width": "100%"
+                },
+                {
+                    "link": "/assets/images/a_new_little_life/13.webp",
+                    "title": "Title",
+                    "width": "33%"
+                },
+                {
+                    "link": "/assets/images/a_new_little_life/14.webp",
+                    "title": "Title",
+                    "width": "33%"
+                },
+                {
+                    "link": "/assets/images/a_new_little_life/15.webp",
+                    "title": "Title",
+                    "width": "33%"
                 }
-
+                
             ]
         },
         {
@@ -34,8 +96,155 @@
                 {
                     "link": "/assets/images/colours_on_micro_level/01.webp",
                     "title": "Title",
-                    "alt": "Alternative Title"
+                    "width": "-"
+                },
+                {
+                    "link": "/assets/images/colours_on_micro_level/01.webp",
+                    "title": "Title",
+                    "width": "100%"
                 }
+            ]
+        },
+        {
+            "name": "The Artist",
+            "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
+            "short_description": "This is the short description",
+            "images": [
+                {
+                    "link": "/assets/images/the_artist/03.webp",
+                    "title": "Title",
+                    "width": "-"
+                },
+                {
+                    "link": "/assets/images/the_artist/11.webp",
+                    "title": "Title",
+                    "width": "100%"
+                },
+                {
+                    "link": "/assets/images/the_artist/05.webp",
+                    "title": "Title",
+                    "width": "33%"
+                },
+                {
+                    "link": "/assets/images/the_artist/04.webp",
+                    "title": "Title",
+                    "width": "32%"
+                },
+                {
+                    "link": "/assets/images/the_artist/06.webp",
+                    "title": "Title",
+                    "width": "33%"
+                },
+                {
+                    "link": "/assets/images/the_artist/07.webp",
+                    "title": "Title",
+                    "width": "100%"
+                },
+                {
+                    "link": "/assets/images/the_artist/03.webp",
+                    "title": "Title",
+                    "width": "49%"
+                },
+                {
+                    "link": "/assets/images/the_artist/02.webp",
+                    "title": "Title",
+                    "width": "50%"
+                },
+                {
+                    "link": "/assets/images/the_artist/01.webp",
+                    "title": "Title",
+                    "width": "39%"
+                },
+                {
+                    "link": "/assets/images/the_artist/09.webp",
+                    "title": "Title",
+                    "width": "60%"
+                },
+                {
+                    "link": "/assets/images/the_artist/10.webp",
+                    "title": "Title",
+                    "width": "50%"
+                },
+                {
+                    "link": "/assets/images/the_artist/08.webp",
+                    "title": "Title",
+                    "width": "49%"
+                }
+
+            ]
+        },
+        {
+            "name": "The Small Lives in Trondheim",
+            "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
+            "short_description": "This is the short description",
+            "images": [
+                {
+                    "link": "/assets/images/the_small_lives_in_trondheim/01.webp",
+                    "title": "Title",
+                    "width": "-"
+                },
+                {
+                    "link": "/assets/images/the_small_lives_in_trondheim/01.webp",
+                    "title": "Title",
+                    "width": "100%"
+                }
+
+            ]
+        },
+        {
+            "name": "The Way We Think",
+            "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
+            "short_description": "This is the short description",
+            "images": [
+                {
+                    "link": "/assets/images/the_way_we_think/01.webp",
+                    "title": "Title",
+                    "width": "-"
+                },
+                {
+                    "link": "/assets/images/the_way_we_think/01.webp",
+                    "title": "Title",
+                    "width": "60%"
+                },
+                {
+                    "link": "/assets/images/the_way_we_think/02.webp",
+                    "title": "Title",
+                    "width": "39%"
+                },
+                {
+                    "link": "/assets/images/the_way_we_think/03.webp",
+                    "title": "Title",
+                    "width": "100%"
+                },
+                {
+                    "link": "/assets/images/the_way_we_think/04.webp",
+                    "title": "Title",
+                    "width": "100%"
+                }
+
+            ]
+        },
+        {
+            "name": "Us",
+            "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
+            "short_description": "This is the short description",
+            "images": [
+                {
+                    "link": "/assets/images/us/01.webp",
+                    "title": "Title",
+                    "width": "-"
+                },
+                {
+                    "link": "/assets/images/us/02.webp",
+                    "title": "Title",
+                    "width": "100%"
+                },
+                {
+                    "link": "/assets/images/us/01.webp",
+                    "title": "Title",
+                    "width": "100%"
+                }
+
             ]
         }
     ] 

@@ -13,7 +13,6 @@ async function getData(){
 
 async function renderHTML(){
     const data = await getData();
-    console.log(data.projects.length);
 
     const imageGrid = document.querySelector(".image-grid");
     
@@ -56,7 +55,6 @@ function scrollButtonAnimation(){
 //Animation that fades greetingbox on scroll
 window.onscroll = function() {fadeOnScroll()};
 const greetingBox = document.querySelector(".greeting-box");
-console.log(greetingBox);
 
 function fadeOnScroll(){
 

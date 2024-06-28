@@ -44,16 +44,34 @@ async function renderHTML(){
     
 }
 
+//Animation that scrolls page on arrow button
 const scrollButton = document.querySelector(".greeting-box #scroll-button");
 console.log(scrollButton);
-scrollButton.addEventListener("click", scrollAnimation);
+scrollButton.addEventListener("click", scrollButtonAnimation);
 
-function scrollAnimation(){
+function scrollButtonAnimation(){
     const imageGrid = document.querySelector(".image-grid");
     imageGrid.scrollIntoView();
-  
+}
+
+//Animation that fades greetingbox on scroll
+window.onscroll = function() {fadeOnScroll()};
+const greetingBox = document.querySelector(".greeting-box");
+console.log(greetingBox);
+
+function fadeOnScroll(){
+
+
+    if(document.documentElement.scrollTop > 200){
+        console.log("fade out");        
+        greetingBox.className = "fade-out greeting-box";
+    } else if(document.documentElement.scrollTop > 50) {
+        console.log("fade half");        
+        greetingBox.className = "fade-half greeting-box";
+    } else {
+        console.log("fade in");
+        greetingBox.className = "fade-in greeting-box";
+    }
 }
 
 renderHTML();
-
-

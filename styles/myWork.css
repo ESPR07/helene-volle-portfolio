@@ -28,6 +28,21 @@ main {
     z-index: 1;
 }
 
+.fade-out{
+    opacity: 0;
+    transition: opacity ease-out 0.2s;
+}
+
+.fade-half{
+    opacity: 0.5;
+    transition: opacity ease-out 0.2s;
+}
+
+.fade-in{
+    opacity: 1;
+    transition: opacity ease-out 0.5s;
+}
+
 .greeting-box h1 {
     font-size: clamp(1.3rem, 5vw, 2.5rem);
 }

@@ -1,29 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/root.css">
-    <link rel="stylesheet" href="/styles/projectPage.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/root.css" />
+    <link rel="stylesheet" href="/styles/projectPage.css" />
     <script src="/scripts/projectPage.js"></script>
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <ul>
-            <li><a href="/">Homepage</a></li>
-            <li><a href="/pages/myWork.html">Work</a></li>
-            <li><a href="/pages/aboutMe.html">About</a></li>
-        </ul>
+      <ul>
+        <li><a href="/">Homepage</a></li>
+        <li><a href="/pages/myWork.html">Work</a></li>
+        <li><a href="/pages/aboutMe.html">About</a></li>
+      </ul>
     </nav>
     <main>
-        <a href="/pages/myWork.html" class="back-button"><span class="back-icon"></span>Back</a>
-        <h1></h1>
-        <p></p>
+      <a href="/pages/myWork.html" class="back-button"
+        ><span class="back-icon"></span>Back</a
+      >
+      <h1></h1>
+      <p></p>
 
-        <container class="image-container"></container>
+      <container class="image-container"></container>
 
-        <a href="#" class="to-top"><span class="to-top-icon"></span></a>
+      <a href="#" class="to-top"><span class="to-top-icon"></span></a>
     </main>
-</body>
+
+    <div class="modal">
+      <button class="exit-button" onclick="exit()"></button>
+
+      <img src="/assets/images/the_artist/11.webp" class="modal-img"/>
+      <container>
+        <button class="next-button" onclick="navigate(event)" value="next"></button>
+        <button class="previous-button" onclick="navigate(event)" value="previous"></button>
+      </container>
+    </div>
+  </body>
 </html>

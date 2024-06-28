@@ -1,4 +1,5 @@
 # Helene Volle Portfolio
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9bdf35ac-379a-47b2-961c-45c5e5e3c41e/deploy-status)](https://app.netlify.com/sites/helene-portfolio/deploys)
 
 ## Endre prosjekter:
 

@@ -4,66 +4,81 @@
             "name": "The Artist",
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
             "short_description": "This is the short description",
+            "sub_title": "Artists note",
+            "sub_description": "This project started out with ....bla bla",
+            "amount_img_part_of_sub": 0,
             "images": [
                 {
                     "link": "/assets/images/the_artist/03.webp",
                     "title": "Title",
-                    "width": "-"
+                    "width": "-",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/the_artist/11.webp",
                     "title": "Title",
-                    "width": "100%"
+                    "width": "100%",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/the_artist/05.webp",
                     "title": "Title",
-                    "width": "33%"
+                    "width": "33%",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/the_artist/04.webp",
                     "title": "Title",
-                    "width": "32%"
+                    "width": "32%",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/the_artist/06.webp",
                     "title": "Title",
-                    "width": "33%"
+                    "width": "33%",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/the_artist/07.webp",
                     "title": "Title",
-                    "width": "100%"
+                    "width": "100%",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/the_artist/03.webp",
                     "title": "Title",
-                    "width": "49%"
+                    "width": "49%",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/the_artist/02.webp",
                     "title": "Title",
-                    "width": "50%"
+                    "width": "50%",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/the_artist/01.webp",
                     "title": "Title",
-                    "width": "39%"
+                    "width": "39%",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/the_artist/09.webp",
                     "title": "Title",
-                    "width": "60%"
+                    "width": "60%",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/the_artist/10.webp",
                     "title": "Title",
-                    "width": "50%"
+                    "width": "50%",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/the_artist/08.webp",
                     "title": "Title",
-                    "width": "49%"
+                    "width": "49%",
+                    "sub_image_description": "-"
                 }
 
             ]
@@ -72,88 +87,108 @@
             "name": "A New Little Life",
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
             "short_description": "This is the short description",
+            "sub_title": "Before",
+            "sub_description": "At the beginning of this project this is how the coasters looked. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis necessitatibus nihil et velit minima commodi magnam dolor temporibus similique suscipit dolores, voluptatum quam. Unde culpa accusantium aperiam quidem nihil ut.",
+            "amount_img_part_of_sub": 3,
             "images": [
                 
 
                 {
                     "link": "/assets/images/a_new_little_life/12.webp",
                     "title": "Project image",
-                    "width": "-"
+                    "width": "-",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/a_new_little_life/11.webp",
                     "title": "Title",
-                    "width": "100%"
+                    "width": "100%",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/a_new_little_life/01.webp",
                     "title": "Title",
-                    "width": "60%"
+                    "width": "60%",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/a_new_little_life/09.webp",
                     "title": "Title",
-                    "width": "39%"
+                    "width": "39%",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/a_new_little_life/10.webp",
                     "title": "Title",
-                    "width": "39%"
+                    "width": "39%",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/a_new_little_life/02.webp",
                     "title": "Title",
-                    "width": "60%"
+                    "width": "60%",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/a_new_little_life/03.webp",
                     "title": "Title",
-                    "width": "60%"
+                    "width": "60%",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/a_new_little_life/08.webp",
                     "title": "Title",
-                    "width": "39%"
+                    "width": "39%",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/a_new_little_life/07.webp",
                     "title": "Title",
-                    "width": "39%"
+                    "width": "39%",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/a_new_little_life/04.webp",
                     "title": "Title",
-                    "width": "60%"
+                    "width": "60%",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/a_new_little_life/05.webp",
                     "title": "Title",
-                    "width": "60%"
+                    "width": "60%",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/a_new_little_life/06.webp",
                     "title": "Title",
-                    "width": "39%"
+                    "width": "39%",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/a_new_little_life/12.webp",
                     "title": "Title",
-                    "width": "100%"
+                    "width": "100%",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/a_new_little_life/13.webp",
                     "title": "Title",
-                    "width": "32%"
+                    "width": "60%",
+                    "sub_image_description": "This is a long and fulfilling description that explains everything about the project in it's fullness!"
+
                 },
                 {
                     "link": "/assets/images/a_new_little_life/14.webp",
                     "title": "Title",
-                    "width": "33%"
+                    "width": "40%",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/a_new_little_life/15.webp",
                     "title": "Title",
-                    "width": "33%"
+                    "width": "59%",
+                    "sub_image_description": "-"
                 }
                 
             ]
@@ -162,16 +197,27 @@
             "name": "Colours On Micro Level",
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
             "short_description": "This is the short description",
+            "sub_title": "Lab images",
+            "sub_description": "Below are images serving as inspiration for my warercolor art...",
+            "amount_img_part_of_sub": 1,
             "images": [
                 {
                     "link": "/assets/images/colours_on_micro_level/01.webp",
                     "title": "Title",
-                    "width": "-"
+                    "width": "-",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/colours_on_micro_level/01.webp",
                     "title": "Title",
-                    "width": "100%"
+                    "width": "100%",
+                    "sub_image_description": "This is an image of something cool"
+                },
+                {
+                    "link": "/assets/images/colours_on_micro_level/01.webp",
+                    "title": "Title",
+                    "width": "40%",
+                    "sub_image_description": "This is an image of something cool"
                 }
             ]
         },
@@ -179,16 +225,21 @@
             "name": "The Small Lives in Trondheim",
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
             "short_description": "This is the short description",
+            "sub_title": "-",
+            "sub_description": "-",
+            "amount_img_part_of_sub": 0,
             "images": [
                 {
                     "link": "/assets/images/the_small_lives_in_trondheim/01.webp",
                     "title": "Title",
-                    "width": "-"
+                    "width": "-",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/the_small_lives_in_trondheim/01.webp",
                     "title": "Title",
-                    "width": "100%"
+                    "width": "100%",
+                    "sub_image_description": "-"
                 }
 
             ]
@@ -197,31 +248,39 @@
             "name": "The Way We Think",
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
             "short_description": "This is the short description",
+            "sub_title": "-",
+            "sub_description": "Artist note: some small footnote",
+            "amount_img_part_of_sub": 0,
             "images": [
                 {
                     "link": "/assets/images/the_way_we_think/01.webp",
                     "title": "Title",
-                    "width": "-"
+                    "width": "-",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/the_way_we_think/01.webp",
                     "title": "Title",
-                    "width": "100%"
+                    "width": "100%",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/the_way_we_think/02.webp",
                     "title": "Title",
-                    "width": "49%"
+                    "width": "49%",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/the_way_we_think/03.webp",
                     "title": "Title",
-                    "width": "50%"
+                    "width": "50%",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/the_way_we_think/04.webp",
                     "title": "Title",
-                    "width": "100%"
+                    "width": "100%",
+                    "sub_image_description": "-"
                 }
 
             ]
@@ -230,21 +289,27 @@
             "name": "Us",
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
             "short_description": "This is the short description",
+            "sub_title": "-",
+            "sub_description": "-",
+            "amount_img_part_of_sub": 0,
             "images": [
                 {
                     "link": "/assets/images/us/02.webp",
                     "title": "Title",
-                    "width": "-"
+                    "width": "-",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/us/02.webp",
                     "title": "Title",
-                    "width": "100%"
+                    "width": "100%",
+                    "sub_image_description": "-"
                 },
                 {
                     "link": "/assets/images/us/01.webp",
                     "title": "Title",
-                    "width": "100%"
+                    "width": "100%",
+                    "sub_image_description": "-"
                 }
 
             ]

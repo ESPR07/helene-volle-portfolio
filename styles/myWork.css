@@ -118,18 +118,29 @@ main {
     transition: opacity 0.3s ease-in;
 }
 
-.project1 {
-    background-image: url("/assets/images/the_artist/10.webp");
+footer{
+    background-color: var(--content-color);
+    color: var(--background);
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px
 }
 
-.project2 {
-    background-image: url("/assets/images/the_small_lives_in_trondheim/01.webp");
+.helene-logo{
+    width: 50px;
+    height: 50px;
+    background-image: url("/assets/icons/mail-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
-.project3 {
-    background-image: url("/assets/images/colours_on_micro_level/01.webp");
+.credits a{
+    color: var(--background);
 }
-
 
 @media screen and (max-width: 900px) {
     .greeting-box {

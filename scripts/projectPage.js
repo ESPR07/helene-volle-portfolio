@@ -30,10 +30,14 @@ async function getProjectData(){
 //Get project from url
 async function renderHTML(){
     const projectData = await getProjectData();
+    console.log(projectData);
 
     //Adding title and description
-    const title = document.querySelector("h1");
-    const description = document.querySelector("p");
+    const title = document.querySelector(".title");
+    const description = document.querySelector(".description");
+    const subTitle = document.querySelector(".sub-title");
+    const subDescription = document.querySelector(".sub-description");
+    const subSection = document.querySelector(".sub-section");
 
     title.innerText = projectData.name;
     description.innerText = projectData.description;
@@ -41,7 +45,8 @@ async function renderHTML(){
     //Adding images
     const imageContainer = document.querySelector(".image-container");
 
-    for(let i=1; i<projectData.images.length;i++){
+    const loopAmount = projectData.images.length - projectData.amount_img_part_of_sub;
+    for(let i=1; i<loopAmount;i++){
         const imageData = projectData.images[i];
         const image = document.createElement("img");
 
@@ -55,6 +60,68 @@ async function renderHTML(){
         imageContainer.appendChild(image);
 
     }
+
+        //Checking if optional subparts are activated
+        if(projectData.sub_title == "-"){
+            subTitle.display = "none";
+        }else{
+            subTitle.innerText = projectData.sub_title;
+        }
+    
+        if(projectData.sub_description == "-"){
+            subDescription.display = "none";
+        }else{
+            subDescription.innerText = projectData.sub_description;
+        }
+    
+        if(projectData.amount_img_part_of_sub == 0){
+            subSection.display = "none";
+        }else{
+            //add images to sub section
+            for(let i=loopAmount; i<projectData.images.length; i++){
+                const thisImageData = projectData.images[i];
+
+                //checks for image sub description
+                if(projectData.images[i].sub_image_description != "-"){
+                    const container = document.createElement("container");
+                    const p = document.createElement("p");
+                    const image = document.createElement("img");
+
+                    p.innerText = thisImageData.sub_image_description;
+                    image.src = thisImageData.link;
+                    image.alt = thisImageData.title;
+                    image.style.width = thisImageData.width;
+                    image.style.minWidth = thisImageData.width;
+                    image.style.cursor = "pointer";
+                    image.addEventListener("click", () => {
+                        displayModal(thisImageData.link);
+                    });
+                    container.className = "sub-container";
+
+                    //odd or even num:
+                    if(i%2 == 0){
+                        container.appendChild(p);
+                        container.appendChild(image);
+                    }else{
+                        container.appendChild(image);
+                        container.appendChild(p);
+                    }
+
+                    subSection.appendChild(container);
+                }else{
+                    const image = document.createElement("img");
+                    image.src = thisImageData.link;
+                    image.alt = thisImageData.title;
+                    image.style.width = thisImageData.width;
+                    image.style.cursor = "pointer";
+                    image.addEventListener("click", () => {
+                        displayModal(thisImageData.link);
+                    });
+
+                    subSection.appendChild(image);
+                }
+            }
+        }
 }
 
 let modalImageLink = "";

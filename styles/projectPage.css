@@ -28,12 +28,16 @@ main{
     background-size: contain;
 }
 
-main p{
-    margin-inline: 20%;
-    font-size: 1.2rem;
+.title, .sub-title{
+    font-size: clamp(1.7rem, 3vw, 2.7rem);
 }
 
-.image-container {
+.description,.sub-description{
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    margin-inline: 20%;
+}
+
+.image-container, .sub-section {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -41,7 +45,7 @@ main p{
     gap: 0.5%;
 }
 
-.image-container img{
+.image-container img, .sub-section > img, .sub-container{
     object-fit: cover;
     margin-top: 1vw;
 }
@@ -116,11 +120,45 @@ main p{
 
 }
 
+.sub-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub-container img{
+    object-fit: cover;
+}
+
+.sub-container p{
+    margin-inline: auto;
+    padding: 15px;
+    font-size: clamp(1.2rem, 3vw, 1.5rem)
+}
+
+.sub-section{
+    margin-top: 0.5%;
+}
+
 
 
 @media screen and (max-width:550px) {
     main p {
         margin-inline: 10%;
     }
+
+    .sub-container{
+        flex-direction: column;
+    }
+
+    .sub-container img{
+        width: 100% !important;
+    }
+
+    .sub-container:nth-child(even){
+        flex-direction: column-reverse;
+    }
+
+
     
 }

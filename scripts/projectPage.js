@@ -53,7 +53,7 @@ async function renderHTML(){
         image.src = imageData.link;
         image.alt = imageData.title;
         image.addEventListener("click", () => {
-            displayModal(imageData.link);
+            displayModal(imageData);
         });
         image.style.width = imageData.width;
 
@@ -82,7 +82,7 @@ async function renderHTML(){
                 const thisImageData = projectData.images[i];
 
                 //checks for image sub description
-                if(projectData.images[i].sub_image_description != "-"){
+                if(projectData.images[i].sub_image_description != ""){
                     const container = document.createElement("container");
                     const p = document.createElement("p");
                     const image = document.createElement("img");
@@ -94,7 +94,7 @@ async function renderHTML(){
                     image.style.minWidth = thisImageData.width;
                     image.style.cursor = "pointer";
                     image.addEventListener("click", () => {
-                        displayModal(thisImageData.link);
+                        displayModal(thisImageData);
                     });
                     container.className = "sub-container";
 
@@ -115,7 +115,7 @@ async function renderHTML(){
                     image.style.width = thisImageData.width;
                     image.style.cursor = "pointer";
                     image.addEventListener("click", () => {
-                        displayModal(thisImageData.link);
+                        displayModal(thisImageData);
                     });
 
                     subSection.appendChild(image);
@@ -125,11 +125,13 @@ async function renderHTML(){
 }
 
 let modalImageLink = "";
+let modalImageText = "";
 
 async function navigate(event){
     const projectData = await getProjectData();
     const projectImages = projectData.images;
     const imageEl = document.querySelector(".modal-img");
+    const imageText = document.querySelector(".modal-text");
 
     for(let i=1; i<projectImages.length; i++){
         //checks where we are in the image stream
@@ -147,6 +149,13 @@ async function navigate(event){
             const nextImageToShow = projectImages[i+increment];
             modalImageLink = nextImageToShow.link;
             imageEl.src = nextImageToShow.link;
+            if(nextImageToShow.sub_image_description == "") {
+                imageText.style.display = "none";
+            } else {
+                imageText.style.display = "block";
+                imageText.innerText = nextImageToShow.sub_image_description;
+            }
+
             } catch (Error){}
             
             return;
@@ -163,9 +172,11 @@ function exit(){
 function displayModal(imageData){
     const modal = document.querySelector(".modal");
     const image = document.querySelector(".modal-img");
+    const text = document.querySelector(".modal-text");
     modal.style.display = "flex";
-    image.src = imageData;
-    modalImageLink = imageData;
+    image.src = imageData.link;
+    text.innerText = imageData.sub_image_description;
+    modalImageLink = imageData.link;
 }
 
 

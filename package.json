@@ -1,0 +1,20 @@
+{
+  "name": "helene-volle-portfolio",
+  "version": "1.0.0",
+  "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/9bdf35ac-379a-47b2-961c-45c5e5e3c41e/deploy-status)](https://app.netlify.com/sites/helene-portfolio/deploys)",
+  "main": "/scripts/firebase.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^10.12.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.5",
+    "vite": "^5.3.2"
+  }
+}

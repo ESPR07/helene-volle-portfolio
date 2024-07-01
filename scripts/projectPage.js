@@ -1,36 +1,13 @@
+import { getSingleProject } from "./firebase.mjs";
 
-//Data from json
-async function getData(){
-    const response = await fetch("/scripts/fakeAPI/info.json");
-    
-    if(response.ok){
-        const result = await response.json();
-        return result;
-    }else{
-        throw new Error("Error in loading data from json file");
-    }
-}
+const fetchID = document.location.search;
+const param = new URLSearchParams(fetchID);
+const ID = param.get("id");
 
-//get data from this project
-async function getProjectData(){
-    const data = await getData();
+const projectData = await getSingleProject(ID);
 
-    const fetchID = document.location.search;
-    const param = new URLSearchParams(fetchID);
-    const ID = param.get("id");
-
-    for(let i=0; i<data.projects.length;i++){
-        const formatedName = data.projects[i].name.toLowerCase().replaceAll(" ", "-");
-        if(formatedName == ID){
-            return data.projects[i];
-        }
-    }
-
-}
 //Get project from url
 async function renderHTML(){
-    const projectData = await getProjectData();
-    console.log(projectData);
 
     //Adding title and description
     const title = document.querySelector(".title");
@@ -46,8 +23,9 @@ async function renderHTML(){
     const imageContainer = document.querySelector(".image-container");
 
     const loopAmount = projectData.images.length - projectData.amount_img_part_of_sub;
-    for(let i=1; i<loopAmount;i++){
+    for(let i=0; i < loopAmount; i++){
         const imageData = projectData.images[i];
+
         const image = document.createElement("img");
 
         image.src = imageData.link;
@@ -62,7 +40,7 @@ async function renderHTML(){
     }
 
         //Checking if optional subparts are activated
-        if(projectData.sub_title == "-"){
+        if(projectData.sub_title == ""){
             subTitle.display = "none";
         }else{
             subTitle.innerText = projectData.sub_title;
@@ -125,15 +103,20 @@ async function renderHTML(){
 }
 
 let modalImageLink = "";
-let modalImageText = "";
+
+const nextButton = document.querySelector(".next-button");
+const previousButton = document.querySelector(".previous-button");
+
+nextButton.addEventListener("click", navigate);
+previousButton.addEventListener("click", navigate);
+
 
 async function navigate(event){
-    const projectData = await getProjectData();
     const projectImages = projectData.images;
     const imageEl = document.querySelector(".modal-img");
     const imageText = document.querySelector(".modal-text");
 
-    for(let i=1; i<projectImages.length; i++){
+    for(let i=0; i<projectImages.length; i++){
         //checks where we are in the image stream
         if(projectImages[i].link == modalImageLink){
             
@@ -141,7 +124,7 @@ async function navigate(event){
             //check navigation button
             if(event.target.value == "next" && ((i+1) <= projectImages.length)){
                 increment = 1;
-            }else if(event.target.value == "previous" && ((i-1) >= 1)){
+            }else if(event.target.value == "previous" && ((i-1) >= 0)){
                 increment = -1;
             }
     
@@ -149,7 +132,7 @@ async function navigate(event){
             const nextImageToShow = projectImages[i+increment];
             modalImageLink = nextImageToShow.link;
             imageEl.src = nextImageToShow.link;
-            if(nextImageToShow.sub_image_description == "") {
+            if(nextImageToShow.sub_image_description === "") {
                 imageText.style.display = "none";
             } else {
                 imageText.style.display = "block";
@@ -164,6 +147,9 @@ async function navigate(event){
 
 }
 
+const exitButton = document.querySelector(".exit-button");
+exitButton.addEventListener("click", exit);
+
 function exit(){
     const modal = document.querySelector(".modal");
     modal.style.display = "none";
@@ -175,7 +161,11 @@ function displayModal(imageData){
     const text = document.querySelector(".modal-text");
     modal.style.display = "flex";
     image.src = imageData.link;
-    text.innerText = imageData.sub_image_description;
+    if(imageData.sub_image_description === "") {
+        text.style.display = "none";
+    } else {
+        text.innerText = imageData.sub_image_description;
+    }
     modalImageLink = imageData.link;
 }
 

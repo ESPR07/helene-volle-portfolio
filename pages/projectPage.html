@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/root.css" />
     <link rel="stylesheet" href="/styles/projectPage.css" />
-    <script src="/scripts/projectPage.js"></script>
+    <script defer src="/scripts/projectPage.js" type="module"></script>
+    <script defer src="/scripts/firebase.mjs" type="module"></script>
+
     <title>Document</title>
   </head>
   <body>
@@ -33,7 +35,7 @@
     </main>
 
     <div class="modal">
-      <button class="exit-button" onclick="exit()"></button>
+      <button class="exit-button"></button>
 
       <div class="modal-image-container">
         <img src="/assets/images/the_artist/11.webp" class="modal-img" >
@@ -42,12 +44,10 @@
       <container>
         <button
           class="next-button"
-          onclick="navigate(event)"
           value="next"
         ></button>
         <button
           class="previous-button"
-          onclick="navigate(event)"
           value="previous"
         ></button>
       </container>

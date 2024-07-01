@@ -1,25 +1,14 @@
+import { getAllProjects } from "./firebase.mjs";
 
-async function getData(){
-    const response = await fetch("/scripts/fakeAPI/info.json");
-    
-    if(response.ok){
-        const result = await response.json();
-        return result;
-    }else{
-        throw new Error("Error in loading data from json file");
-    }
-}
-
+const allProjects = await getAllProjects();
 
 async function renderHTML(){
-    const data = await getData();
-
     const imageGrid = document.querySelector(".image-grid");
     
-    for(let i=0; i<data.projects.length; i++){
-        const thisObjectData = data.projects[i];
+    for(let i=0; i<allProjects.length; i++){
+        const thisObjectData = allProjects[i];
         const firstImageData = thisObjectData.images[0];
-        const formatedTitleForURL = thisObjectData.name.toLowerCase().replaceAll(" ", "-");
+        const formatedTitleForURL = thisObjectData.name.toLowerCase().replaceAll(" ", "_");
 
         //creating new HTML objects
         const newClickableProject = document.createElement("a");

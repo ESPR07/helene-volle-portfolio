@@ -3,7 +3,7 @@
         {
             "name": "The Artist",
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
-            "short_description": "This is the short description",
+            "short_description": "2024",
             "sub_title": "Artists note",
             "sub_description": "This project started out with ....bla bla",
             "amount_img_part_of_sub": 0,
@@ -86,7 +86,7 @@
         {
             "name": "A New Little Life",
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
-            "short_description": "This is the short description",
+            "short_description": "2024",
             "sub_title": "Before",
             "sub_description": "At the beginning of this project this is how the coasters looked. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis necessitatibus nihil et velit minima commodi magnam dolor temporibus similique suscipit dolores, voluptatum quam. Unde culpa accusantium aperiam quidem nihil ut.",
             "amount_img_part_of_sub": 3,
@@ -195,7 +195,7 @@
         {
             "name": "Colours On Micro Level",
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
-            "short_description": "This is the short description",
+            "short_description": "2024",
             "sub_title": "Lab images",
             "sub_description": "Below are images serving as inspiration for my warercolor art...",
             "amount_img_part_of_sub": 1,
@@ -246,7 +246,7 @@
         {
             "name": "The Way We Think",
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
-            "short_description": "This is the short description",
+            "short_description": "2019",
             "sub_title": "",
             "sub_description": "Artist note: some small footnote",
             "amount_img_part_of_sub": 0,
@@ -287,7 +287,7 @@
         {
             "name": "Us",
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
-            "short_description": "This is the short description",
+            "short_description": "2020",
             "sub_title": "",
             "sub_description": "",
             "amount_img_part_of_sub": 0,

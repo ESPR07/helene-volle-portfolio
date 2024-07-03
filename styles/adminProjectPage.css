@@ -1,0 +1,19 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    max-width: 200px;
+    height: 3vh;
+}
+
+.title-input, .sub-title-input{
+    width: 60%;
+}
+
+.img-input, .sub-img-input{
+    width: 60%;
+}

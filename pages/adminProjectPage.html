@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/root.css" />
+    <link rel="stylesheet" href="/styles/adminProjectPage.css" />
+    <script defer src="/scripts/adminProjectPage.js" type="module"></script>
+    <script defer src="/scripts/firebase.mjs" type="module"></script>
+    <title>Admin Project Pages</title>
+  </head>
+  <body>
+    <main>
+      <a href="/pages/admin.html" class="back-button">
+        <span class="back-icon"></span>
+        Back
+      </a>
+
+      <section class="title-input">
+        <label for="project-title">Title:</label>
+        <input type="text" placeholder="Title" id="project-title" />
+        <label for="project-description">Description:</label>
+        <textarea rows="3" placeholder="Description" id="project-description"></textarea>
+      </section>
+
+      <section class="img-input">
+        <h2>Images</h2>
+        <label for="img-title">Image title:</label>
+        <input type="text" placeholder="Title" id="img-title" />
+
+        <label for="img-link">Link:</label>
+        <input type="text" placeholder="Link" id="img-link" />
+
+        <label for="img-width">Width:</label>
+        <input type="text" placeholder="Width" id="img-width" />
+
+        <label for="img-position">Position:</label>
+        <input type="number" placeholder="Position" id="img-position" />
+
+        <input type="checkbox" placeholder="Title" id="is-first-img" />
+        <label for="is-first-img">front page image</label>
+        <button>Add</button>
+        <button>Delete image</button>
+      </section>
+
+      <container class="img-container"></container>
+
+      <section class="sub-title-input">
+        <h2>Sub-section</h2>
+        <label for="sub-title">Sub title</label>
+        <input type="text" placeholder="Sub Title" id="sub-title" />
+        <label for="sub-description">Sub Description</label>
+        <textarea placeholder="Description" id="sub-description" ></textarea>
+      </section>
+
+      <section class="sub-img-input">
+        <h2>Sub-section images</h2>
+
+        <label for="sub-img-title">Image title:</label>
+        <input type="text" placeholder="Title" id="sub-img-title" />
+
+        <label for="sub-img-link">Link:</label>
+        <input type="text" placeholder="Link" id="sub-img-link" />
+
+        <label for="sub-img-width">Width:</label>
+        <input type="text" placeholder="Width" id="sub-img-width" />
+
+        <label for="sub-img-position">Position:</label>
+        <input type="number" placeholder="Position" id="sub-img-position" />
+
+        <input type="checkbox" placeholder="Title" id="sub-is-first-img" />
+        <label for="sub-is-first-img">front page image</label>
+
+        <button>Submit</button>
+        <button>Delete image</button>
+      </section>
+
+      <container class="sub-img-container"></container>
+
+      <button>Update Page</button>
+    </main>
+  </body>
+</html>

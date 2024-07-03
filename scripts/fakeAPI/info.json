@@ -295,27 +295,21 @@
                     "sub_image_description": ""
                 },
                 {
-                    "link": "/assets/images/the_small_lives_in_trondheim/2.webp",
-                    "title": "Title",
-                    "width": "100%",
-                    "sub_image_description": ""
-                },
-                {
                     "link": "/assets/images/the_small_lives_in_trondheim/3.webp",
                     "title": "Title",
                     "width": "59%",
                     "sub_image_description": ""
                 },
                 {
-                    "link": "/assets/images/the_small_lives_in_trondheim/1.webp",
-                    "title": "Title",
-                    "width": "100%",
-                    "sub_image_description": ""
-                },
-                {
                     "link": "/assets/images/the_small_lives_in_trondheim/6.webp",
                     "title": "Title",
                     "width": "40%",
+                    "sub_image_description": ""
+                },
+                {
+                    "link": "/assets/images/the_small_lives_in_trondheim/1.webp",
+                    "title": "Title",
+                    "width": "100%",
                     "sub_image_description": ""
                 },
                 {
@@ -328,6 +322,18 @@
                     "link": "/assets/images/the_small_lives_in_trondheim/4.webp",
                     "title": "Title",
                     "width": "60%",
+                    "sub_image_description": ""
+                },
+                {
+                    "link": "/assets/images/the_small_lives_in_trondheim/9.webp",
+                    "title": "Title",
+                    "width": "39%",
+                    "sub_image_description": ""
+                },
+                {
+                    "link": "/assets/images/the_small_lives_in_trondheim/2.webp",
+                    "title": "Title",
+                    "width": "100%",
                     "sub_image_description": ""
                 }
             ]

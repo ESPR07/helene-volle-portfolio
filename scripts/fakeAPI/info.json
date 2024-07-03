@@ -331,9 +331,15 @@
                     "sub_image_description": ""
                 },
                 {
-                    "link": "/assets/images/the_small_lives_in_trondheim/6.webp",
+                    "link": "/assets/images/the_small_lives_in_trondheim/8.webp",
                     "title": "Title",
-                    "width": "40%",
+                    "width": "39%",
+                    "sub_image_description": ""
+                },
+                {
+                    "link": "/assets/images/the_small_lives_in_trondheim/4.webp",
+                    "title": "Title",
+                    "width": "60%",
                     "sub_image_description": ""
                 }
             ]

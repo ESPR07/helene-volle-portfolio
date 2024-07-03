@@ -85,10 +85,11 @@
         },
         {
             "name": "Colours On Micro Level",
-            "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
+            "description": "This project was inspired by my work as a biomedical labratory scientist. I have rearly looked at lab work as anything else than science. However, people around me has given me another perspective on how interesting and beautiful the science behind biology can be. 
+            This is the first time I combined my work and knowledge from my bachelor's degree with my interest in making art. I often tend to approach these aspects differently, but this project has taught me how I can combine the different perspective, something I will keep doing in the future.",
             "short_description": "2024",
             "sub_title": "Lab images",
-            "sub_description": "Below are microscopic images I have collected from my studies, serving as inspiration for this project",
+            "sub_description": "Below are microscopic images og the human body that I have collected from my studies, serving as inspiration for this project",
             "amount_img_part_of_sub": 4,
             "images": [
                 {

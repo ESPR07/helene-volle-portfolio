@@ -104,9 +104,69 @@
                     "sub_image_description": "This is an image of something cool"
                 },
                 {
-                    "link": "/assets/images/colours_on_micro_level/01.webp",
+                    "link": "/assets/images/colours_on_micro_level/02_1.webp",
                     "title": "Title",
-                    "width": "40%",
+                    "width": "49%",
+                    "sub_image_description": "This is an image of something cool"
+                },
+                {
+                    "link": "/assets/images/colours_on_micro_level/03_1.webp",
+                    "title": "Title",
+                    "width": "50%",
+                    "sub_image_description": "This is an image of something cool"
+                },
+                {
+                    "link": "/assets/images/colours_on_micro_level/04_1.webp",
+                    "title": "Title",
+                    "width": "49%",
+                    "sub_image_description": "This is an image of something cool"
+                },
+                {
+                    "link": "/assets/images/colours_on_micro_level/05_1.webp",
+                    "title": "Title",
+                    "width": "50%",
+                    "sub_image_description": "This is an image of something cool"
+                },
+                {
+                    "link": "/assets/images/colours_on_micro_level/06_1.webp",
+                    "title": "Title",
+                    "width": "49%",
+                    "sub_image_description": "This is an image of something cool"
+                },
+                {
+                    "link": "/assets/images/colours_on_micro_level/07_1.webp",
+                    "title": "Title",
+                    "width": "50%",
+                    "sub_image_description": "This is an image of something cool"
+                },
+                {
+                    "link": "/assets/images/colours_on_micro_level/08_1.webp",
+                    "title": "Title",
+                    "width": "49%",
+                    "sub_image_description": "This is an image of something cool"
+                },
+                {
+                    "link": "/assets/images/colours_on_micro_level/01_2.webp",
+                    "title": "Title",
+                    "width": "30%",
+                    "sub_image_description": "This is an image of something cool"
+                },
+                {
+                    "link": "/assets/images/colours_on_micro_level/02_2.webp",
+                    "title": "Title",
+                    "width": "30%",
+                    "sub_image_description": "This is an image of something cool"
+                },
+                {
+                    "link": "/assets/images/colours_on_micro_level/03_2.webp",
+                    "title": "Title",
+                    "width": "30%",
+                    "sub_image_description": "This is an image of something cool"
+                },
+                {
+                    "link": "/assets/images/colours_on_micro_level/04_2.webp",
+                    "title": "Title",
+                    "width": "30%",
                     "sub_image_description": "This is an image of something cool"
                 }
             ]

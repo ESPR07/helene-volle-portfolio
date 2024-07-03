@@ -88,7 +88,7 @@
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
             "short_description": "2024",
             "sub_title": "Lab images",
-            "sub_description": "Below are images serving as inspiration for my warercolor art...",
+            "sub_description": "Below are microscopic images I have collected from my studies, serving as inspiration for this project",
             "amount_img_part_of_sub": 4,
             "images": [
                 {
@@ -155,7 +155,7 @@
                     "link": "/assets/images/colours_on_micro_level/02_2.webp",
                     "title": "Title",
                     "width": "33%",
-                    "sub_image_description": "This is an image of something cool"
+                    "sub_image_description": "Healthy bloodcells with the stereotypical disk shape"
                 },
                 {
                     "link": "/assets/images/colours_on_micro_level/03_2.webp",

@@ -92,15 +92,15 @@
             "amount_img_part_of_sub": 1,
             "images": [
                 {
-                    "link": "/assets/images/colours_on_micro_level/01_1.webp",
+                    "link": "/assets/images/colours_on_micro_level/06_1.webp",
                     "title": "Title",
                     "width": "",
                     "sub_image_description": ""
                 },
                 {
-                    "link": "/assets/images/colours_on_micro_level/01.webp",
+                    "link": "/assets/images/colours_on_micro_level/01_1.webp",
                     "title": "Title",
-                    "width": "100%",
+                    "width": "50%",
                     "sub_image_description": "This is an image of something cool"
                 },
                 {

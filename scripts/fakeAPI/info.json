@@ -221,34 +221,6 @@
             ]
         },
         {
-            "name": "Colours On Micro Level",
-            "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
-            "short_description": "2024",
-            "sub_title": "Lab images",
-            "sub_description": "Below are images serving as inspiration for my warercolor art...",
-            "amount_img_part_of_sub": 1,
-            "images": [
-                {
-                    "link": "/assets/images/colours_on_micro_level/01.webp",
-                    "title": "Title",
-                    "width": "",
-                    "sub_image_description": ""
-                },
-                {
-                    "link": "/assets/images/colours_on_micro_level/01.webp",
-                    "title": "Title",
-                    "width": "100%",
-                    "sub_image_description": "This is an image of something cool"
-                },
-                {
-                    "link": "/assets/images/colours_on_micro_level/01.webp",
-                    "title": "Title",
-                    "width": "40%",
-                    "sub_image_description": "This is an image of something cool"
-                }
-            ]
-        },
-        {
             "name": "The Small Lives in Trondheim",
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
             "short_description": "This is the short description",

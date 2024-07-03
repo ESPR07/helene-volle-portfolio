@@ -262,19 +262,13 @@
                 {
                     "link": "/assets/images/a_new_little_life/13.webp",
                     "title": "Title",
-                    "width": "60%",
-                    "sub_image_description": "This is a long and fulfilling description that explains everything about the project in it's fullness!"
-                },
-                {
-                    "link": "/assets/images/a_new_little_life/14.webp",
-                    "title": "Title",
-                    "width": "40%",
+                    "width": "50%",
                     "sub_image_description": ""
                 },
                 {
                     "link": "/assets/images/a_new_little_life/15.webp",
                     "title": "Title",
-                    "width": "59%",
+                    "width": "49%",
                     "sub_image_description": ""
                 }
                 

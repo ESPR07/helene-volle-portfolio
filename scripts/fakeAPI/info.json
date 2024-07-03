@@ -283,7 +283,7 @@
         {
             "name": "The Small Lives in Trondheim",
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
-            "short_description": "This is the short description",
+            "short_description": "2024",
             "sub_title": "",
             "sub_description": "",
             "amount_img_part_of_sub": 0,
@@ -321,7 +321,7 @@
                 {
                     "link": "/assets/images/the_small_lives_in_trondheim/3.webp",
                     "title": "Title",
-                    "width": "60%",
+                    "width": "59%",
                     "sub_image_description": ""
                 },
                 {
@@ -329,8 +329,13 @@
                     "title": "Title",
                     "width": "40%",
                     "sub_image_description": ""
-                }
-
+                },
+                {
+                    "link": "/assets/images/the_small_lives_in_trondheim/6.webp",
+                    "title": "Title",
+                    "width": "40%",
+                    "sub_image_description": ""
+                },
             ]
         },
         {

@@ -3,7 +3,7 @@
         {
             "name": "The Artist",
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
-            "short_description": "2024",
+            "short_description": "Photography, 2024",
             "sub_title": "Artists note",
             "sub_description": "This project started out with ....bla bla",
             "amount_img_part_of_sub": 0,
@@ -86,7 +86,7 @@
         {
             "name": "A New Little Life",
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
-            "short_description": "2024",
+            "short_description": "Redesign, 2024",
             "sub_title": "Before",
             "sub_description": "At the beginning of this project this is how the coasters looked. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis necessitatibus nihil et velit minima commodi magnam dolor temporibus similique suscipit dolores, voluptatum quam. Unde culpa accusantium aperiam quidem nihil ut.",
             "amount_img_part_of_sub": 2,
@@ -189,7 +189,7 @@
         {
             "name": "Colours On Micro Level",
             "description": "This project was inspired by my work as a biomedical labratory scientist. I have rearly looked at lab work as anything else than science. However, people around me has given me another perspective on how interesting and beautiful the science behind biology can be. \n\n This is the first time I combined my work and knowledge from my bachelor's degree with my interest in making art. I often tend to approach these aspects differently, but this project has taught me how I can combine the different perspective, something I will keep doing in the future.",
-            "short_description": "2024",
+            "short_description": "Watercolours, 2024",
             "sub_title": "Lab images",
             "sub_description": "Below are microscopic images of the human body that I have collected from my studies, serving as inspiration for this project",
             "amount_img_part_of_sub": 4,
@@ -277,7 +277,7 @@
         {
             "name": "The Small Lives in Trondheim",
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
-            "short_description": "2024",
+            "short_description": "Photography, 2024",
             "sub_title": "",
             "sub_description": "",
             "amount_img_part_of_sub": 0,
@@ -341,7 +341,7 @@
         {
             "name": "Living small",
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
-            "short_description": "2024",
+            "short_description": "Miniature, 2024",
             "sub_title": "",
             "sub_description": "Artist note: some small footnote",
             "amount_img_part_of_sub": 0,
@@ -442,7 +442,7 @@
         {
             "name": "Us",
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
-            "short_description": "2020",
+            "short_description": "Acrylic paint, 2020",
             "sub_title": "",
             "sub_description": "",
             "amount_img_part_of_sub": 0,
@@ -471,7 +471,7 @@
         {
             "name": "The Way We Think",
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
-            "short_description": "2019",
+            "short_description": "Metal plate etching, 2019",
             "sub_title": "",
             "sub_description": "Artist note: some small footnote",
             "amount_img_part_of_sub": 0,

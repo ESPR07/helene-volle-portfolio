@@ -20,7 +20,7 @@ async function renderHTML(){
         projectTitle.innerText = thisObjectData.name;
         projectInfo.className = "project-info";
         newClickableProject.href =`/pages/projectPage.html?id=${formatedTitleForURL}`;
-        newClickableProject.style.backgroundImage = `url(${firstImageData.link})`;
+        newClickableProject.style.backgroundImage = `url(https://lh3.googleusercontent.com/d/${firstImageData.link})`;
 
         //Appending HTML
         projectInfo.appendChild(projectTitle);

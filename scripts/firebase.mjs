@@ -1,5 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs, getDoc, doc } from "firebase/firestore";
+import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -19,12 +20,16 @@ const db = getFirestore(app);
 const projects = collection(db, "projects");
 
 async function getAllProjects() {
-    const querySnapshot = await getDocs(projects);
-    const projectsData = [];
-    querySnapshot.forEach((project) => {
-      projectsData.push(project.data());
-    });
-    return projectsData;
+    try {
+      const querySnapshot = await getDocs(projects);
+      const projectsData = [];
+      querySnapshot.forEach((project) => {
+        projectsData.push(project.data());
+      });
+      return projectsData;
+    } catch(error) {
+      console.error(error);
+    }
   }
 
 async function getSingleProject(projectID) {
@@ -40,4 +45,42 @@ async function getSingleProject(projectID) {
   }
 }
 
-export { getAllProjects, getSingleProject };
+function loginEvent(email, password) {
+  const auth = getAuth();
+  signInWithEmailAndPassword(auth, email, password)
+    .then((userCredentials) => {
+      const user = userCredentials.user;
+      window.location.href = "/pages/adminProjectPage.html";
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.error(errorMessage);
+    })
+}
+
+function logoutEvent() {
+  const auth = getAuth();
+  signOut(auth).then(() => {
+  }).catch((error) => {
+    console.error(error);
+  })
+}
+
+function checkLoggedIn() {
+  const auth = getAuth(app);
+
+  onAuthStateChanged(auth, (user) => {
+    if(user) {
+      return
+    } else {
+      window.location.href = "/admin.html";
+    }
+  })
+}
+
+// function createProject(projectDetails) {
+
+// }
+
+export { getAllProjects, getSingleProject, loginEvent, logoutEvent, checkLoggedIn };

@@ -28,7 +28,7 @@ async function renderHTML(){
 
         const image = document.createElement("img");
 
-        image.src = imageData.link;
+        image.src = `https://lh3.googleusercontent.com/d/${imageData.link}`;
         image.alt = imageData.title;
         image.addEventListener("click", () => {
             displayModal(imageData);
@@ -66,7 +66,7 @@ async function renderHTML(){
                     const image = document.createElement("img");
 
                     p.innerText = thisImageData.sub_image_description;
-                    image.src = thisImageData.link;
+                    image.src = `https://lh3.googleusercontent.com/d/${thisImageData.link}`;
                     image.alt = thisImageData.title;
                     image.style.width = thisImageData.width;
                     image.style.minWidth = thisImageData.width;
@@ -88,7 +88,7 @@ async function renderHTML(){
                     subSection.appendChild(container);
                 }else{
                     const image = document.createElement("img");
-                    image.src = thisImageData.link;
+                    image.src = `https://lh3.googleusercontent.com/d/${thisImageData.link}`;
                     image.alt = thisImageData.title;
                     image.style.width = thisImageData.width;
                     image.style.cursor = "pointer";
@@ -118,7 +118,7 @@ async function navigate(event){
 
     for(let i=0; i<projectImages.length; i++){
         //checks where we are in the image stream
-        if(projectImages[i].link == modalImageLink){
+        if(`https://lh3.googleusercontent.com/d/${projectImages[i].link}` == modalImageLink){
             
             let increment = 0;
             //check navigation button
@@ -130,7 +130,7 @@ async function navigate(event){
     
             try{ //try if next img can be shown otherwise proceed as usual
             const nextImageToShow = projectImages[i+increment];
-            modalImageLink = nextImageToShow.link;
+            modalImageLink = `https://lh3.googleusercontent.com/d/${nextImageToShow.link}`;
             imageEl.src = nextImageToShow.link;
             if(nextImageToShow.sub_image_description === "") {
                 imageText.style.display = "none";
@@ -160,7 +160,7 @@ function displayModal(imageData){
     const image = document.querySelector(".modal-img");
     const text = document.querySelector(".modal-text");
     modal.style.display = "flex";
-    image.src = imageData.link;
+    image.src = `https://lh3.googleusercontent.com/d/${imageData.link}`;
     if(imageData.sub_image_description === "") {
         text.style.display = "none";
     } else {

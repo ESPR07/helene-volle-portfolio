@@ -50,3 +50,7 @@ nav ul li a {
     color: var(--active-color);
     cursor: default;
 }
+
+button, input, textarea {
+    font-family: var(--font);
+}

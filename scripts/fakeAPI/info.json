@@ -469,6 +469,53 @@
             ]
         },
         {
+            "name": "Realism",
+            "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
+            "short_description": "Drawing, 2018",
+            "sub_title": "",
+            "sub_description": "Artist note: some small footnote",
+            "amount_img_part_of_sub": 0,
+            "images": [
+                {
+                    "link": "/assets/images/drawings/03.webp",
+                    "title": "Title",
+                    "width": "",
+                    "sub_image_description": ""
+                },
+                {
+                    "link": "/assets/images/drawings/01.webp",
+                    "title": "",
+                    "width": "100%",
+                    "sub_image_description": ""
+                },
+                {
+                    "link": "/assets/images/drawings/04.webp",
+                    "title": "",
+                    "width": "49%",
+                    "sub_image_description": ""
+                },
+                {
+                    "link": "/assets/images/drawings/05.webp",
+                    "title": "",
+                    "width": "50%",
+                    "sub_image_description": ""
+                },
+                {
+                    "link": "/assets/images/drawings/03.webp",
+                    "title": "",
+                    "width": "49%",
+                    "sub_image_description": ""
+                },
+                {
+                    "link": "/assets/images/drawings/06.webp",
+                    "title": "",
+                    "width": "50%",
+                    "sub_image_description": ""
+                }
+
+            ]
+        },
+        {
             "name": "The Way We Think",
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
             "short_description": "Metal plate etching, 2019",

@@ -1,0 +1,201 @@
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+nav {
+    justify-content: end;
+}
+
+main{
+    position: relative;
+}
+
+.logoutButton {
+    background-color: var(--content-color);
+    color: var(--background);
+    height: 30px;
+    width: 100px;
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease-in;
+}
+
+.logoutButton:hover {
+    background-color: var(--active-color);
+    transition: background-color 0.3s ease-in;
+    cursor: pointer;
+}
+
+.greeting-box {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20%;
+    z-index: 1;
+}
+
+.fade-out{
+    opacity: 0;
+    transition: opacity ease-out 0.2s;
+}
+
+.fade-half{
+    opacity: 0.5;
+    transition: opacity ease-out 0.2s;
+}
+
+.fade-in{
+    opacity: 1;
+    transition: opacity ease-out 0.5s;
+}
+
+.greeting-box h1 {
+    font-size: clamp(1.3rem, 5vw, 2.5rem);
+}
+
+.greeting-box p {
+    font-size: clamp(1rem, 3vw, 1.3rem);
+}
+
+.greeting-box button {
+    height: 50px;
+    width: 50px;
+    background-image: url("/assets/icons/scroll-down.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--background);
+    border: none;
+}
+
+.greeting-box button:hover {
+    cursor: pointer;
+    animation: 1.3s infinite ease-in-out bounce;
+}
+
+.image-grid {
+    position: relative;
+    margin-top: 500px;
+    margin-bottom: 50px;
+    margin-inline: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    place-items: center;
+    justify-content: space-between;
+    z-index: 5;
+    background-color: var(--background);
+}
+
+.project-card, .addNew {
+    width: 100%;
+    height: 30vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+
+.addNew {
+    background-image: url("/assets/icons/add-new-icon.svg");
+    background-size: 50%;
+    background-color: var(--active-color);
+}
+
+.project-info {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--background);
+    transition: opacity 0.3s ease-in;
+}
+
+.project-info h2 {
+    font-size: clamp(1.1rem, 2vw, 2rem);
+    margin-inline: 5px;
+}
+
+.project-info p {
+    font-size: clamp(1rem, 1vw, 1.2rem);
+    margin-inline: 10%;
+}
+
+.project-info:hover {
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+}
+
+footer{
+    background-color: var(--content-color);
+    color: var(--background);
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px
+}
+
+.helene-logo{
+    width: 50px;
+    height: 50px;
+    background-image: url("/assets/icons/mail-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.credits a{
+    color: var(--background);
+}
+
+@media screen and (max-width: 900px) {
+    .greeting-box {
+        top: 15%;
+    }
+
+    .image-grid {
+        margin-top: 400px;
+        margin-inline: 20px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .image-grid a {
+        height: 45vw;
+    }
+
+    .project-info {
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .image-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .image-grid a {
+        height: 80vw;
+    }
+}

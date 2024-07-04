@@ -50,7 +50,7 @@ function loginEvent(email, password) {
   signInWithEmailAndPassword(auth, email, password)
     .then((userCredentials) => {
       const user = userCredentials.user;
-      window.location.href = "/pages/adminProjectPage.html";
+      window.location.href = "/pages/adminMyWork.html";
     })
     .catch((error) => {
       const errorCode = error.code;
@@ -62,6 +62,7 @@ function loginEvent(email, password) {
 function logoutEvent() {
   const auth = getAuth();
   signOut(auth).then(() => {
+    window.location.href = "/";
   }).catch((error) => {
     console.error(error);
   })
@@ -78,9 +79,5 @@ function checkLoggedIn() {
     }
   })
 }
-
-// function createProject(projectDetails) {
-
-// }
 
 export { getAllProjects, getSingleProject, loginEvent, logoutEvent, checkLoggedIn };

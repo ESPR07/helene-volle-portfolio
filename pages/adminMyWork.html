@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin || My Work</title>
+    <link rel="stylesheet" href="/styles/root.css">
+    <link rel="stylesheet" href="/styles/adminMyWork.css">
+    <script defer src="/scripts/adminMyWork.js" type="module"></script>
+
+    <title>My Work</title>
 </head>
 <body>
-    
+    <nav>
+        <button type="button" class="logoutButton">Logout</button>
+    </nav>
+    <main>
+        <section class="greeting-box">
+            <h1>Hi, I'm Helene Backe Volle</h1>
+            <p>Scroll down to see my work</p>
+            <button id="scroll-button"></button>
+        </section>
+        <section class="image-grid">
+            <a href="/pages/adminProjectPage.html" class="addNew"></a>
+        </section>
+
+    </main>
+
+    <footer>
+        <span class="helene-logo"></span>
+        <container class="credits">
+            <p>Website by <a href="mailto:ingvild.sandven@gmail.com" target="_blank">Ingvild Sandven</a> and <a href="https://github.com/ESPR07/" target="_blank">Sindre Derås</a></p>
+          </container>
+    </footer>
 </body>
 </html>

@@ -28,6 +28,15 @@ main {
     margin-bottom: 40px;
 }
 
+.logo {
+    width: 100px;
+    height: 100px;
+    background-image: url("/assets/icons/helene-logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 .navigation-container {
     display: flex;
     margin-bottom: 90px;

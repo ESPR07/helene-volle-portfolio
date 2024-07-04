@@ -175,7 +175,7 @@ function displayModal(imageData){
     const text = document.querySelector(".modal-text");
     modal.style.display = "flex";
     image.src = imageData.link;
-    text.innerText = imageData.sub_image_description;
+    text.innerText = imageData.title;
     modalImageLink = imageData.link;
 }
 

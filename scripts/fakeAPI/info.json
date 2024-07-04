@@ -3,7 +3,7 @@
         {
             "name": "The Artist",
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
-            "short_description": "This is the short description",
+            "short_description": "2024",
             "sub_title": "Artists note",
             "sub_description": "This project started out with ....bla bla",
             "amount_img_part_of_sub": 0,
@@ -84,9 +84,97 @@
             ]
         },
         {
+            "name": "Colours On Micro Level",
+            "description": "This project was inspired by my work as a biomedical labratory scientist. I have rearly looked at lab work as anything else than science. However, people around me has given me another perspective on how interesting and beautiful the science behind biology can be. This is the first time I combined my work and knowledge from my bachelor's degree with my interest in making art. I often tend to approach these aspects differently, but this project has taught me how I can combine the different perspective, something I will keep doing in the future.",
+            "short_description": "2024",
+            "sub_title": "Lab images",
+            "sub_description": "Below are microscopic images of the human body that I have collected from my studies, serving as inspiration for this project",
+            "amount_img_part_of_sub": 4,
+            "images": [
+                {
+                    "link": "/assets/images/colours_on_micro_level/06_1.webp",
+                    "title": "Title",
+                    "width": "",
+                    "sub_image_description": ""
+                },
+                {
+                    "link": "/assets/images/colours_on_micro_level/05_1.webp",
+                    "title": "Title",
+                    "width": "50%",
+                    "sub_image_description": "This is an image of something cool"
+                },
+                {
+                    "link": "/assets/images/colours_on_micro_level/06_1.webp",
+                    "title": "Title",
+                    "width": "49%",
+                    "sub_image_description": "This is an image of something cool"
+                },
+                {
+                    "link": "/assets/images/colours_on_micro_level/07_1.webp",
+                    "title": "Title",
+                    "width": "50%",
+                    "sub_image_description": "This is an image of something cool"
+                },
+                {
+                    "link": "/assets/images/colours_on_micro_level/08_1.webp",
+                    "title": "Title",
+                    "width": "49%",
+                    "sub_image_description": "This is an image of something cool"
+                },
+                {
+                    "link": "/assets/images/colours_on_micro_level/01_1.webp",
+                    "title": "Title",
+                    "width": "50%",
+                    "sub_image_description": "This is an image of something cool"
+                },
+                {
+                    "link": "/assets/images/colours_on_micro_level/02_1.webp",
+                    "title": "Title",
+                    "width": "49%",
+                    "sub_image_description": "This is an image of something cool"
+                },
+                {
+                    "link": "/assets/images/colours_on_micro_level/03_1.webp",
+                    "title": "Title",
+                    "width": "50%",
+                    "sub_image_description": "This is an image of something cool"
+                },
+                {
+                    "link": "/assets/images/colours_on_micro_level/04_1.webp",
+                    "title": "Title",
+                    "width": "49%",
+                    "sub_image_description": "This is an image of something cool"
+                },
+                {
+                    "link": "/assets/images/colours_on_micro_level/01_2.webp",
+                    "title": "Title",
+                    "width": "33%",
+                    "sub_image_description": "This is an image of something cool"
+                },
+                {
+                    "link": "/assets/images/colours_on_micro_level/02_2.webp",
+                    "title": "Title",
+                    "width": "33%",
+                    "sub_image_description": "Healthy blood cells with the stereotypical disk shape"
+                },
+                {
+                    "link": "/assets/images/colours_on_micro_level/03_2.webp",
+                    "title": "Title",
+                    "width": "33%",
+                    "sub_image_description": "This is an image of something cool"
+                },
+                {
+                    "link": "/assets/images/colours_on_micro_level/04_2.webp",
+                    "title": "Title",
+                    "width": "33%",
+                    "sub_image_description": "This is an image of something cool"
+                }
+            ]
+        },
+        {
             "name": "A New Little Life",
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
-            "short_description": "This is the short description",
+            "short_description": "2024",
             "sub_title": "Before",
             "sub_description": "At the beginning of this project this is how the coasters looked. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis necessitatibus nihil et velit minima commodi magnam dolor temporibus similique suscipit dolores, voluptatum quam. Unde culpa accusantium aperiam quidem nihil ut.",
             "amount_img_part_of_sub": 3,
@@ -94,7 +182,7 @@
                 
 
                 {
-                    "link": "/assets/images/a_new_little_life/12.webp",
+                    "link": "/assets/images/a_new_little_life/05.webp",
                     "title": "Project image",
                     "width": "",
                     "sub_image_description": ""
@@ -174,79 +262,86 @@
                 {
                     "link": "/assets/images/a_new_little_life/13.webp",
                     "title": "Title",
-                    "width": "60%",
-                    "sub_image_description": "This is a long and fulfilling description that explains everything about the project in it's fullness!"
-                },
-                {
-                    "link": "/assets/images/a_new_little_life/14.webp",
-                    "title": "Title",
-                    "width": "40%",
+                    "width": "50%",
                     "sub_image_description": ""
                 },
                 {
                     "link": "/assets/images/a_new_little_life/15.webp",
                     "title": "Title",
-                    "width": "59%",
+                    "width": "49%",
                     "sub_image_description": ""
                 }
                 
             ]
         },
         {
-            "name": "Colours On Micro Level",
-            "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
-            "short_description": "This is the short description",
-            "sub_title": "Lab images",
-            "sub_description": "Below are images serving as inspiration for my warercolor art...",
-            "amount_img_part_of_sub": 1,
-            "images": [
-                {
-                    "link": "/assets/images/colours_on_micro_level/01.webp",
-                    "title": "Title",
-                    "width": "",
-                    "sub_image_description": ""
-                },
-                {
-                    "link": "/assets/images/colours_on_micro_level/01.webp",
-                    "title": "Title",
-                    "width": "100%",
-                    "sub_image_description": "This is an image of something cool"
-                },
-                {
-                    "link": "/assets/images/colours_on_micro_level/01.webp",
-                    "title": "Title",
-                    "width": "40%",
-                    "sub_image_description": "This is an image of something cool"
-                }
-            ]
-        },
-        {
             "name": "The Small Lives in Trondheim",
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
-            "short_description": "This is the short description",
+            "short_description": "2024",
             "sub_title": "",
             "sub_description": "",
             "amount_img_part_of_sub": 0,
             "images": [
                 {
-                    "link": "/assets/images/the_small_lives_in_trondheim/01.webp",
+                    "link": "/assets/images/the_small_lives_in_trondheim/2_f.webp",
                     "title": "Title",
                     "width": "",
                     "sub_image_description": ""
                 },
                 {
-                    "link": "/assets/images/the_small_lives_in_trondheim/01.webp",
+                    "link": "/assets/images/the_small_lives_in_trondheim/7.webp",
+                    "title": "Title",
+                    "width": "100%",
+                    "sub_image_description": ""
+                },
+                {
+                    "link": "/assets/images/the_small_lives_in_trondheim/3.webp",
+                    "title": "Title",
+                    "width": "59%",
+                    "sub_image_description": ""
+                },
+                {
+                    "link": "/assets/images/the_small_lives_in_trondheim/6.webp",
+                    "title": "Title",
+                    "width": "40%",
+                    "sub_image_description": ""
+                },
+                {
+                    "link": "/assets/images/the_small_lives_in_trondheim/1_2.webp",
+                    "title": "Title",
+                    "width": "100%",
+                    "sub_image_description": ""
+                },
+                {
+                    "link": "/assets/images/the_small_lives_in_trondheim/8.webp",
+                    "title": "Title",
+                    "width": "39%",
+                    "sub_image_description": ""
+                },
+                {
+                    "link": "/assets/images/the_small_lives_in_trondheim/4.webp",
+                    "title": "Title",
+                    "width": "60%",
+                    "sub_image_description": ""
+                },
+                {
+                    "link": "/assets/images/the_small_lives_in_trondheim/2.webp",
+                    "title": "Title",
+                    "width": "100%",
+                    "sub_image_description": ""
+                },
+                {
+                    "link": "/assets/images/the_small_lives_in_trondheim/9.webp",
                     "title": "Title",
                     "width": "100%",
                     "sub_image_description": ""
                 }
-
             ]
         },
         {
             "name": "The Way We Think",
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
-            "short_description": "This is the short description",
+            "short_description": "2019",
             "sub_title": "",
             "sub_description": "Artist note: some small footnote",
             "amount_img_part_of_sub": 0,
@@ -287,7 +382,7 @@
         {
             "name": "Us",
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
-            "short_description": "This is the short description",
+            "short_description": "2020",
             "sub_title": "",
             "sub_description": "",
             "amount_img_part_of_sub": 0,

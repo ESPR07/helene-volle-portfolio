@@ -339,6 +339,35 @@
             ]
         },
         {
+            "name": "Us",
+            "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
+            "short_description": "2020",
+            "sub_title": "",
+            "sub_description": "",
+            "amount_img_part_of_sub": 0,
+            "images": [
+                {
+                    "link": "/assets/images/us/02.webp",
+                    "title": "Title",
+                    "width": "",
+                    "sub_image_description": ""
+                },
+                {
+                    "link": "/assets/images/us/02.webp",
+                    "title": "Title",
+                    "width": "100%",
+                    "sub_image_description": ""
+                },
+                {
+                    "link": "/assets/images/us/01.webp",
+                    "title": "Title",
+                    "width": "100%",
+                    "sub_image_description": ""
+                }
+
+            ]
+        },
+        {
             "name": "The Way We Think",
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
             "short_description": "2019",
@@ -379,34 +408,5 @@
 
             ]
         },
-        {
-            "name": "Us",
-            "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
-            "short_description": "2020",
-            "sub_title": "",
-            "sub_description": "",
-            "amount_img_part_of_sub": 0,
-            "images": [
-                {
-                    "link": "/assets/images/us/02.webp",
-                    "title": "Title",
-                    "width": "",
-                    "sub_image_description": ""
-                },
-                {
-                    "link": "/assets/images/us/02.webp",
-                    "title": "Title",
-                    "width": "100%",
-                    "sub_image_description": ""
-                },
-                {
-                    "link": "/assets/images/us/01.webp",
-                    "title": "Title",
-                    "width": "100%",
-                    "sub_image_description": ""
-                }
-
-            ]
-        }
     ] 
 }

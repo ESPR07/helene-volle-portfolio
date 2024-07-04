@@ -9,7 +9,7 @@
             "amount_img_part_of_sub": 0,
             "images": [
                 {
-                    "link": "/assets/images/the_artist/03.webp",
+                    "link": "/assets/images/the_artist/03_f.webp",
                     "title": "Title",
                     "width": "",
                     "sub_image_description": ""
@@ -94,7 +94,7 @@
                 
 
                 {
-                    "link": "/assets/images/a_new_little_life/05.webp",
+                    "link": "/assets/images/a_new_little_life/05_f.webp",
                     "title": "Project image",
                     "width": "",
                     "sub_image_description": ""

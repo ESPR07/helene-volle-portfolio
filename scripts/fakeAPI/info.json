@@ -516,6 +516,35 @@
             ]
         },
         {
+            "name": "Colours are a gift",
+            "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
+            "short_description": "Drawing, 2022",
+            "sub_title": "",
+            "sub_description": "Artist note: some small footnote",
+            "amount_img_part_of_sub": 0,
+            "images": [
+                {
+                    "link": "/assets/images/drawings/02.webp",
+                    "title": "Title",
+                    "width": "",
+                    "sub_image_description": ""
+                },
+                {
+                    "link": "/assets/images/drawings/11.webp",
+                    "title": "",
+                    "width": "100%",
+                    "sub_image_description": ""
+                },
+                {
+                    "link": "/assets/images/drawings/02.webp",
+                    "title": "",
+                    "width": "100%",
+                    "sub_image_description": ""
+                }
+
+            ]
+        },
+        {
             "name": "The Way We Think",
             "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
             "short_description": "Metal plate etching, 2019",

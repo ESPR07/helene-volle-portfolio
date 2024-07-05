@@ -132,11 +132,12 @@ async function navigate(event){
             const nextImageToShow = projectImages[i+increment];
             modalImageLink = `https://lh3.googleusercontent.com/d/${nextImageToShow.link}`;
             imageEl.src = nextImageToShow.link;
-            if(nextImageToShow.sub_image_description === "") {
+              
+            if(nextImageToShow.title == "") {
                 imageText.style.display = "none";
             } else {
                 imageText.style.display = "block";
-                imageText.innerText = nextImageToShow.sub_image_description;
+                imageText.innerText = nextImageToShow.title;
             }
 
             } catch (Error){}
@@ -160,6 +161,7 @@ function displayModal(imageData){
     const image = document.querySelector(".modal-img");
     const text = document.querySelector(".modal-text");
     modal.style.display = "flex";
+
     image.src = `https://lh3.googleusercontent.com/d/${imageData.link}`;
     if(imageData.sub_image_description === "") {
         text.style.display = "none";

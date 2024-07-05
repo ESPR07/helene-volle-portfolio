@@ -149,11 +149,11 @@ async function navigate(event){
             const nextImageToShow = projectImages[i+increment];
             modalImageLink = nextImageToShow.link;
             imageEl.src = nextImageToShow.link;
-            if(nextImageToShow.sub_image_description == "") {
+            if(nextImageToShow.title == "") {
                 imageText.style.display = "none";
             } else {
                 imageText.style.display = "block";
-                imageText.innerText = nextImageToShow.sub_image_description;
+                imageText.innerText = nextImageToShow.title;
             }
 
             } catch (Error){}

@@ -9,14 +9,14 @@
             "amount_img_part_of_sub": 0,
             "images": [
                 {
-                    "link": "/assets/images/the_artist/03_f.webp",
+                    "link": "/assets/images/the_artist/03.webp",
                     "title": "Title",
                     "width": "",
                     "sub_image_description": ""
                 },
                 {
                     "link": "/assets/images/the_artist/11.webp",
-                    "title": "Title",
+                    "title": "Another Title",
                     "width": "100%",
                     "sub_image_description": ""
                 },

@@ -119,9 +119,14 @@ main{
     background-image: url("/assets/icons/add-new-icon.svg");
     background-size: 50%;
     background-color: var(--active-color);
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in;
 }
 
-.add
+.addNew:hover{
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+}
 
 .project-info {
     opacity: 0;

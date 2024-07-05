@@ -16,6 +16,10 @@ nav {
     justify-content: end;
 }
 
+nav li{
+    margin-top: 10px;
+}
+
 main{
     position: relative;
 }
@@ -116,6 +120,8 @@ main{
     background-size: 50%;
     background-color: var(--active-color);
 }
+
+.add
 
 .project-info {
     opacity: 0;

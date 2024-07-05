@@ -7,7 +7,7 @@ const ID = param.get("id");
 const projectData = await getSingleProject(ID);
 
 //Get project from url
-async function renderHTML(){
+function renderHTML(){
 
     //Adding title and description
     const title = document.querySelector(".title");
@@ -168,9 +168,6 @@ function displayModal(imageData){
     }
     modalImageLink = imageData.link;
 }
-
-
-
 
 
 

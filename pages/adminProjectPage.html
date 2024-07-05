@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/root.css" />
+    <link rel="stylesheet" href="/styles/adminProjectPage.css" />
+    <script defer src="/scripts/adminProjectPage.js" type="module"></script>
+    <title>Admin | New Project</title>
+  </head>
+  <body>
+    <nav>
+      <button type="button" class="logoutButton">Logout</button>
+    </nav>
+    <main>
+      <container class="top-button-container">
+        <a href="/pages/adminMyWork.html" class="back-button">
+          <span class="back-icon"></span>
+          Back
+        </a>
+      </container>
+      <h1>New Project</h1>
+
+      <section class="title-input">
+        <container class="project-headers">
+          <label for="project-title" class="title-label">Title:</label> 
+          <label for="project-type" class="project-type-label">Project type:</label>
+          
+          <input type="text" placeholder="Title" id="project-title" />
+
+          <select id="project-type">
+            <option value="main">Main Project</option>
+            <option value="small">Smaller Project</option>
+          </select>
+        </container>
+
+        <label for="short-description">Short Description:</label>
+        <input type="text" placeholder="short-description" id="short-description" />
+
+        <label for="project-description">Description:</label>
+        <textarea placeholder="Description" id="project-description"></textarea>
+      </section>
+
+      <section class="img-input">
+        <h2>Images</h2>
+        <label for="img-title">Image title:</label>
+        <input type="text" placeholder="Title" id="img-title" />
+
+        <label for="img-link">Google Image ID:</label>
+        <input type="text" placeholder="Google Image ID" id="img-link" />
+
+        <container class="positioning-wrapper">
+          <label for="img-width" class="width-label">Width:</label>
+          <input type="text" placeholder="Width" id="img-width" />
+
+          <label for="img-position" class="position-label">Position:</label>
+          <input type="number" placeholder="Position" id="img-position" />
+
+          <container class="checkbox-container">
+            <label for="is-first-img">front page image</label>
+            <input type="checkbox" placeholder="Title" id="is-first-img" />
+          </container>
+        </container>
+
+        <container class="button-container">
+          <button id="clear-button">Clear inputs</button>
+          <button id="add-button">Save image</button>
+          <button id="delete-button">Delete image</button>
+        </container>
+
+      </section>
+
+      <container id="img-container"></container>
+
+      <section class="sub-title-input">
+        <h2>Sub-section</h2>
+        <label for="sub-title">Sub title</label>
+        <input type="text" placeholder="Sub Title" id="sub-title" />
+        <label for="sub-description">Sub Description</label>
+        <textarea placeholder="Description" id="sub-description"></textarea>
+      </section>
+
+      <section class="sub-img-input">
+        <h2>Images</h2>
+        <label for="sub-img-title">Image title:</label>
+        <input type="text" placeholder="Title" id="sub-img-title" />
+
+        <label for="sub-img-link">Google Image ID:</label>
+        <input type="text" placeholder="Google Image ID" id="sub-img-link" />
+
+        <label for="sub-img-description">Sub image Description:</label>
+        <textarea placeholder="Sub Image Description" id="sub-img-description"></textarea>
+
+        <container class="positioning-wrapper">
+          <label for="img-width" class="width-label">Width:</label>
+          <input type="text" placeholder="Width" id="sub-img-width" />
+
+          <label for="img-position" class="position-label">Position:</label>
+          <input type="number" placeholder="Position" id="sub-img-position" />
+
+          <container class="checkbox-container">
+            <label for="is-first-img">front page image</label>
+            <input type="checkbox" placeholder="Title" id="sub-is-first-img" />
+          </container>
+        </container>
+
+        <container class="button-container">
+          <button id="sub-clear-button">Clear inputs</button>
+          <button id="sub-add-button">Save image</button>
+          <button id="sub-delete-button">Delete image</button>
+        </container>
+
+      </section>
+
+      <container id="sub-img-container"></container>
+
+      <button class="submit-button">Save Project</button>
+    </main>
+  </body>
+</html>

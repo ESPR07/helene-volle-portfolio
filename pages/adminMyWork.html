@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/assets/icons/helene-logo.png">
     <link rel="stylesheet" href="/styles/root.css">
-    <link rel="stylesheet" href="/styles/myWork.css">
-    <script defer src="/scripts/myWork.js" type="module"></script>
+    <link rel="stylesheet" href="/styles/adminMyWork.css">
+    <script defer src="/scripts/adminMyWork.js" type="module"></script>
 
-    <title>My Work</title>
+    <title>Admin | My Work</title>
 </head>
 <body>
-    <nav>
+
+    <nav> 
         <ul>
-            <li><a href="/">Homepage</a></li>
-            <li><a href="/pages/myWork.html" class="active">Work</a></li>
-            <li><a href="/pages/aboutMe.html">About</a></li>
+            <!--  <li><a href="/">Homepage</a></li>--> 
+            <li><a href="/pages/adminMyWork.html" class="active">Work</a></li>
+            <li><a href="/pages/adminAboutMe.html">About</a></li>
         </ul>
+        <button type="button" class="logoutButton">Logout</button>
     </nav>
     <main>
         <section class="greeting-box">
@@ -24,7 +25,9 @@
             <p>Scroll down to see my work</p>
             <button id="scroll-button"></button>
         </section>
-        <section class="image-grid"></section>
+        <section class="image-grid">
+            <a href="/pages/adminProjectPage.html" class="addNew"></a>
+        </section>
 
     </main>
 

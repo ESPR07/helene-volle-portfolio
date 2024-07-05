@@ -1,4 +1,10 @@
-import { getAllProjects } from "./firebase.mjs";
+import { getAllProjects, checkLoggedIn, logoutEvent } from "./firebase.mjs";
+
+checkLoggedIn();
+
+const logoutButton = document.querySelector(".logoutButton");
+
+logoutButton.addEventListener("click", logoutEvent);
 
 const allProjects = await getAllProjects();
 
@@ -19,14 +25,15 @@ async function renderHTML(){
         projectDescription.innerText = thisObjectData.short_description;
         projectTitle.innerText = thisObjectData.name;
         projectInfo.className = "project-info";
-        newClickableProject.href =`/pages/projectPage.html?id=${formatedTitleForURL}`;
+        newClickableProject.href =`/pages/adminProjectPage.html?id=${formatedTitleForURL}`;
         newClickableProject.style.backgroundImage = `url(https://lh3.googleusercontent.com/d/${firstImageData.link})`;
+        newClickableProject.className = "project-card"
 
         //Appending HTML
         projectInfo.appendChild(projectTitle);
         projectInfo.appendChild(projectDescription);
         newClickableProject.appendChild(projectInfo);
-        imageGrid.appendChild(newClickableProject);
+        imageGrid.prepend(newClickableProject);
         
     }
     

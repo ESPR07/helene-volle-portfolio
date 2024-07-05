@@ -5,7 +5,7 @@
 
 :root{
     --background: #f1e3d4;
-    --content-color: #4e2d0d;
+    --content-color: #4E2D0D;
     --hover-color: #7A5445;
     --active-color: #b99c91;
     --font: "bebasKai", 'Courier New', Courier, monospace;
@@ -50,6 +50,10 @@ nav ul li a {
     color: var(--active-color);
     cursor: default;
 }
+
+
+button, input, textarea {
+    font-family: var(--font);
 
 footer{
     background-color: var(--content-color);

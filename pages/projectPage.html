@@ -6,8 +6,9 @@
     <link rel="icon" type="image/x-icon" href="/assets/icons/helene-logo.png">
     <link rel="stylesheet" href="/styles/root.css" />
     <link rel="stylesheet" href="/styles/projectPage.css" />
-    <script src="/scripts/projectPage.js"></script>
-    <title>Document</title>
+    <script defer src="/scripts/projectPage.js" type="module"></script>
+
+    <title>Project</title>
   </head>
   <body>
     <nav>
@@ -34,7 +35,7 @@
     </main>
 
     <div class="modal">
-      <button class="exit-button" onclick="exit()"></button>
+      <button class="exit-button"></button>
 
       <div class="modal-image-container">
         <img src="/assets/images/the_artist/11.webp" class="modal-img" >
@@ -43,12 +44,10 @@
       <container>
         <button
           class="next-button"
-          onclick="navigate(event)"
           value="next"
         ></button>
         <button
           class="previous-button"
-          onclick="navigate(event)"
           value="previous"
         ></button>
       </container>

@@ -1,0 +1,102 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+}
+
+.index-image {
+    display: flex;
+}
+
+.index-image img {
+    max-height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.info h1 {
+    font-size: 2rem;
+}
+
+.info p {
+    font-size: 1.4rem;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 5px;
+}
+
+.loginForm label {
+ font-size: 1.3rem;
+}
+
+.loginForm input {
+    height: 25px;
+    font-size: 1.1rem;
+    padding: 5px;
+}
+
+.loginButton {
+    background-color: var(--content-color);
+    color: var(--background);
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease-in;
+    margin-top: 20px;
+}
+
+.loginButton:hover {
+    background-color: var(--active-color);
+    transition: background-color 0.3s ease-in;
+    cursor: pointer;
+}
+
+.return-link {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info {
+        position: absolute;
+        padding: 40px;
+        height: 89vh;
+        color: var(--background);
+    }
+
+    .loginButton {
+        background-color: var(--background);
+        color: var(--content-color);
+    }
+
+    .loginButton:hover {
+        color: var(--background);
+        transition: color 0.1s ease-in-out;
+    }
+
+    .index-image {
+        height: 100%;
+        width: 100%;
+    }
+}

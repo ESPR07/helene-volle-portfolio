@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, getDocs, getDoc, doc } from "firebase/firestore";
+import { getFirestore, collection, getDocs, getDoc, doc, setDoc, deleteDoc } from "firebase/firestore";
 import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
 
 // Your web app's Firebase configuration
@@ -80,4 +80,12 @@ function checkLoggedIn() {
   })
 }
 
-export { getAllProjects, getSingleProject, loginEvent, logoutEvent, checkLoggedIn };
+async function setProject(projectID, projectObject){
+  await setDoc(doc(db, "projects", projectID), projectObject);
+}
+
+async function removeProject(projectID){
+  await deleteDoc(doc(db, "projects", projectID));
+}
+
+export { getAllProjects, getSingleProject, loginEvent, logoutEvent, checkLoggedIn, setProject, removeProject};

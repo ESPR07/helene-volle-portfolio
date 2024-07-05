@@ -1,4 +1,4 @@
-import { checkLoggedIn, getSingleProject, logoutEvent } from "./firebase.mjs";
+import { checkLoggedIn, getSingleProject, logoutEvent, setProject, removeProject } from "./firebase.mjs";
 
 checkLoggedIn();
 
@@ -248,13 +248,27 @@ function saveProject(){
     const imageArray = mainImages.concat(subImages);
     projectObject.images = imageArray;
     
-    console.log(projectID, projectObject);
-
+    try{
+      setProject(projectID, projectObject);
+      window.location.href = "./adminMyWork.js";
+    }catch{
+      alert("Something went wrong. Could not save project");
+    }
 }
 
 function deleteProject(){
+  const titleVal = document.querySelector("#project-title").value;
+  const projectID = titleVal.toLowerCase().replaceAll(" ", "_");
     if(confirm("are you sure you want to delete this project")){
         console.log("delete");
+
+        try{
+          removeProject(projectID);
+          window.location.href = "./adminMyWork.js";
+        }catch{
+          alert("Something went wrong. Could not remove project");
+        }
+        
     }else{
         console.log("cancel");
     }

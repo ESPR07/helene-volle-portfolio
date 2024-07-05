@@ -560,26 +560,44 @@
                 },
                 {
                     "link": "/assets/images/the_way_we_think/01.webp",
-                    "title": "Title",
+                    "title": "",
                     "width": "100%",
                     "sub_image_description": ""
                 },
                 {
                     "link": "/assets/images/the_way_we_think/02.webp",
-                    "title": "Title",
+                    "title": "",
                     "width": "49%",
                     "sub_image_description": ""
                 },
                 {
                     "link": "/assets/images/the_way_we_think/03.webp",
-                    "title": "Title",
+                    "title": "",
                     "width": "50%",
                     "sub_image_description": ""
                 },
                 {
                     "link": "/assets/images/the_way_we_think/04.webp",
-                    "title": "Title",
+                    "title": "",
                     "width": "100%",
+                    "sub_image_description": ""
+                },
+                {
+                    "link": "/assets/images/the_way_we_think/05.webp",
+                    "title": "",
+                    "width": "33%",
+                    "sub_image_description": ""
+                },
+                {
+                    "link": "/assets/images/the_way_we_think/07.webp",
+                    "title": "",
+                    "width": "32%",
+                    "sub_image_description": ""
+                },
+                {
+                    "link": "/assets/images/the_way_we_think/06.webp",
+                    "title": "",
+                    "width": "33%",
                     "sub_image_description": ""
                 }
 

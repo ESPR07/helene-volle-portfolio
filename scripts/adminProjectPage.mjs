@@ -260,7 +260,6 @@ function deleteProject(){
   const titleVal = document.querySelector("#project-title").value;
   const projectID = titleVal.toLowerCase().replaceAll(" ", "_");
     if(confirm("are you sure you want to delete this project")){
-        console.log("delete");
 
         try{
           removeProject(projectID);
@@ -270,17 +269,14 @@ function deleteProject(){
         }
         
     }else{
-        console.log("cancel");
+        return;
     }
 }
 
 //render html diffrently based on project id
 if (ID) {
   const projectData = await getSingleProject(ID);
-  console.log(projectData);
   fillOutFields(projectData);
-} else {
-  console.log("Creating new project");
-}
+} 
 
 renderHTMLButtons();

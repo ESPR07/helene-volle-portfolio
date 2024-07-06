@@ -40,7 +40,7 @@ async function getSingleProject(projectID) {
     const projectData = projectSnapshot.data();
     return projectData;
   } else {
-    console.log(`Project with ID ${projectID} does not exist.`);
+    alert(`Project with ID ${projectID} does not exist.`);
     return null;
   }
 }

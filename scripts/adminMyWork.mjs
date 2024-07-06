@@ -1,4 +1,5 @@
 import { getAllProjects, checkNotLoggedIn, logoutEvent } from "./firebase.mjs";
+import {sortByProjectType, sortProjectByPositionReversed} from "./components/sortingProjects.mjs";
 
 checkNotLoggedIn();
 
@@ -6,7 +7,11 @@ const logoutButton = document.querySelector(".logoutButton");
 
 logoutButton.addEventListener("click", logoutEvent);
 
-const allProjects = await getAllProjects();
+const allProjectsUnsorted = await getAllProjects();
+
+const allMainProjects = sortProjectByPositionReversed(sortByProjectType("main", allProjectsUnsorted));
+const allSmallProjects = sortProjectByPositionReversed(sortByProjectType("small", allProjectsUnsorted));
+const allProjects = allSmallProjects.concat(allMainProjects);
 
 async function renderHTML(){
     const imageGrid = document.querySelector(".image-grid");

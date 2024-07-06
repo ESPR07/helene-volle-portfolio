@@ -177,30 +177,6 @@ main{
     transition: opacity 0.3s ease-in;
 }
 
-footer{
-    background-color: var(--content-color);
-    color: var(--background);
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px
-}
-
-.helene-logo{
-    width: 50px;
-    height: 50px;
-    background-image: url("/assets/icons/helene-logo-nosplash.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-.credits a{
-    color: var(--background);
-}
-
 @media screen and (max-width: 900px) {
     .greeting-box {
         top: 15%;

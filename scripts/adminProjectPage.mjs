@@ -89,16 +89,43 @@ function fillOutFields(projectData) {
 function updateImageContainer(container, imageArray) {
   container.innerHTML = "";
   for (let i = 0; i < imageArray.length; i++) {
+
     const imageData = imageArray[i];
     const image = document.createElement("img");
     image.src = `https://lh3.googleusercontent.com/d/${imageData.link}`;
     image.alt = imageData.title;
-    image.style.cursor = "pointer";
     image.style.width = imageData.width;
-    image.addEventListener("click", () => {
-      updateImageInput(imageData, container.id, i);
-    });
-    container.appendChild(image);
+
+    if(imageData.sub_image_description == ""){
+    
+      image.style.cursor = "pointer";
+      image.addEventListener("click", () => {
+        updateImageInput(imageData, container.id, i);
+      });
+      container.appendChild(image);
+
+    }else{
+      const subContainer = document.createElement("container");
+      const p = document.createElement("p");
+
+      image.style.minWidth = imageData.width;
+      p.innerText = imageData.sub_image_description;
+      subContainer.className = "sub-container";
+      subContainer.style.cursor = "pointer";
+      subContainer.addEventListener("click", () => {
+        updateImageInput(imageData, container.id, i);
+      });
+      //odd or even num:
+      if(i%2 == 0){
+        subContainer.appendChild(p);
+        subContainer.appendChild(image);
+      }else{
+        subContainer.appendChild(image);
+        subContainer.appendChild(p);
+      }
+      container.appendChild(subContainer);
+    }
+  
   }
 }
 
@@ -116,6 +143,8 @@ function updateImageInput(imageData, containerID, position) {
     widthInp = document.querySelector("#sub-img-width");
     posInp = document.querySelector("#sub-img-position");
     frontImgChck = document.querySelector("#sub-is-first-img");
+    const subImgDesc = document.querySelector("#sub-img-description");
+    subImgDesc.value = imageData.sub_image_description;
   } else {
     clearImageInput();
     titleInp = document.querySelector("#img-title");
@@ -150,6 +179,7 @@ function clearSubImageInput() {
     document.querySelector("#sub-img-width").value = "";
     document.querySelector("#sub-img-position").value = 0;
     document.querySelector("#sub-is-first-img").checked = false;
+    document.querySelector("#sub-img-description").value = "";
 }
 
 //add functions
@@ -250,7 +280,9 @@ function saveProject(){
     
     try{
       setProject(projectID, projectObject);
-      window.location.href = "./adminMyWork.js";
+      setTimeout(() => {
+        window.location.href = "./adminMyWork.html";
+      }, 2000);
     }catch{
       alert("Something went wrong. Could not save project");
     }
@@ -264,7 +296,9 @@ function deleteProject(){
 
         try{
           removeProject(projectID);
-          window.location.href = "./adminMyWork.js";
+          setTimeout(() => {
+            window.location.href = "./adminMyWork.html";
+          }, 2000);
         }catch{
           alert("Something went wrong. Could not remove project");
         }

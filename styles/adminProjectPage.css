@@ -178,6 +178,32 @@ input[type = checkbox] {
 
 #img-container, #sub-img-container{
     margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5%;
+}
+
+#img-container img, #sub-img-container > img{
+    object-fit: cover;
+    margin-top: 1vw;
+}
+
+.sub-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub-container img{
+    object-fit: cover;
+}
+
+.sub-container p{
+    margin-inline: auto;
+    padding: 15px;
+    font-size: clamp(1rem, 3vw, 1.2rem)
 }
 
 .submit-button {

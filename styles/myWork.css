@@ -118,6 +118,44 @@ main {
     transition: opacity 0.3s ease-in;
 }
 
+.smaller-projects h2{
+    font-size: clamp(1.4rem, 3vw, 1.7rem);
+    margin-bottom: 10px;
+}
+
+.dropdown-arrow{
+    background-image: url("../assets/icons/back-button.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    rotate: -90deg;
+}
+
+.dropdown-container{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--content-color);
+    margin-inline: 10%;
+    align-items: center;
+}
+
+.smaller-projects-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    place-items: center;
+    justify-content: space-between;
+    z-index: 5;
+    max-height: 100%;
+    transition: max-height 1s ease-in;
+}
+
+.hidden{
+    max-height: 0px;
+    transition: max-height 1s ease-in;
+}
+
 @media screen and (max-width: 900px) {
     .greeting-box {
         top: 15%;

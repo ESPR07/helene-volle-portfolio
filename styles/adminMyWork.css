@@ -139,6 +139,7 @@ main{
     background-color: rgba(0, 0, 0, 0.6);
     color: var(--background);
     transition: opacity 0.3s ease-in;
+    position: relative;
 }
 
 .project-info h2 {
@@ -149,6 +150,18 @@ main{
 .project-info p {
     font-size: clamp(1rem, 1vw, 1.2rem);
     margin-inline: 10%;
+}
+
+.project-info > .project-tag{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--content-color);
+    padding-inline: 15px;
+    padding-block: 5px;
+    border-radius: 5px;
+    margin-inline: 0;
+    margin-bottom: 0;
 }
 
 .project-info:hover {

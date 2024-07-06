@@ -1,6 +1,6 @@
-import { getAllProjects, checkLoggedIn, logoutEvent } from "./firebase.mjs";
+import { getAllProjects, checkNotLoggedIn, logoutEvent } from "./firebase.mjs";
 
-checkLoggedIn();
+checkNotLoggedIn();
 
 const logoutButton = document.querySelector(".logoutButton");
 
@@ -33,7 +33,15 @@ async function renderHTML(){
         projectInfo.appendChild(projectTitle);
         projectInfo.appendChild(projectDescription);
         newClickableProject.appendChild(projectInfo);
-        imageGrid.prepend(newClickableProject);
+        imageGrid.prepend(newClickableProject); 
+        
+        //Adding tags on smaller projects
+        if(thisObjectData.project_type != "main"){
+            const projectTag = document.createElement("p");
+            projectTag.className = "project-tag";
+            projectTag.innerText = thisObjectData.project_type;
+            projectInfo.appendChild(projectTag);
+        }
         
     }
     

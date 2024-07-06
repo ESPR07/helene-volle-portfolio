@@ -1,6 +1,6 @@
-import { checkLoggedIn, getSingleProject, logoutEvent, setProject, removeProject } from "./firebase.mjs";
+import { checkNotLoggedIn, getSingleProject, logoutEvent, setProject, removeProject } from "./firebase.mjs";
 
-checkLoggedIn();
+checkNotLoggedIn();
 
 const logoutButton = document.querySelector(".logoutButton");
 logoutButton.addEventListener("click", logoutEvent);
@@ -39,11 +39,7 @@ function renderHTMLButtons(){
 
     saveBtn.addEventListener("click", saveProject);
 
-    //create delete button
-    const deleteProjectBtn = document.createElement("button");
-    deleteProjectBtn.innerText = "Delete Project";
-    deleteProjectBtn.addEventListener("click", deleteProject);
-    document.querySelector(".top-button-container").appendChild(deleteProjectBtn);
+    
 }
 
 //Filling out input fields in html with provided project data
@@ -83,6 +79,12 @@ function fillOutFields(projectData) {
   const subImageContainer = document.querySelector("#sub-img-container");
   updateImageContainer(imageContainer, mainImages);
   updateImageContainer(subImageContainer, subImages);
+
+  //create delete button
+  const deleteProjectBtn = document.createElement("button");
+  deleteProjectBtn.innerText = "Delete Project";
+  deleteProjectBtn.addEventListener("click", deleteProject);
+  document.querySelector(".top-button-container").appendChild(deleteProjectBtn);
 }
 
 //updating container after any changes on inputFields

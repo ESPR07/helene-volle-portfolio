@@ -55,6 +55,7 @@ nav ul li a {
 button, input, textarea {
     font-family: var(--font);
 }
+
 footer{
     background-color: var(--content-color);
     color: var(--background);

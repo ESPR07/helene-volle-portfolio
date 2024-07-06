@@ -1,8 +1,7 @@
 import { getAllProjects } from "./firebase.mjs";
-import {sortByProjectType, sortProjectByPosition} from "./components/sortingProjects.mjs";
+import { sortProjectByPosition} from "./components/sortingProjects.mjs";
 
 const allProjects = await getAllProjects();
-console.log(allProjects);
 
 async function renderHTML(){
     const imageGrid = document.querySelector(".image-grid");
@@ -11,9 +10,7 @@ async function renderHTML(){
 
     //add toggle 
     const dropdownContainer = document.querySelector(".dropdown-container");
-    console.log(dropdownContainer);
     dropdownContainer.addEventListener("click", () => {
-        console.log("click");
                 
         if(smallerProjectsGrid.classList.contains("expanded")) {
             //Happens if it's already open

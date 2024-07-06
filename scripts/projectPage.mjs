@@ -113,12 +113,15 @@ previousButton.addEventListener("click", navigate);
 
 async function navigate(event){
     const projectImages = projectData.images;
+    console.log(projectImages);
     const imageEl = document.querySelector(".modal-img");
     const imageText = document.querySelector(".modal-text");
 
     for(let i=0; i<projectImages.length; i++){
         //checks where we are in the image stream
-        if(`https://lh3.googleusercontent.com/d/${projectImages[i].link}` == modalImageLink){
+        if(projectImages[i].link == modalImageLink){
+
+            console.log(projectImages[i]);
             
             let increment = 0;
             //check navigation button
@@ -127,11 +130,16 @@ async function navigate(event){
             }else if(event.target.value == "previous" && ((i-1) >= 0)){
                 increment = -1;
             }
+
+            console.log(increment);
     
             try{ //try if next img can be shown otherwise proceed as usual
             const nextImageToShow = projectImages[i+increment];
-            modalImageLink = `https://lh3.googleusercontent.com/d/${nextImageToShow.link}`;
-            imageEl.src = nextImageToShow.link;
+            console.log(nextImageToShow);
+
+            modalImageLink = nextImageToShow.link;
+            imageEl.src = `https://lh3.googleusercontent.com/d/${nextImageToShow.link}`;
+            console.log(imageEl.src);
               
             if(nextImageToShow.title == "") {
                 imageText.style.display = "none";
@@ -163,10 +171,10 @@ function displayModal(imageData){
     modal.style.display = "flex";
 
     image.src = `https://lh3.googleusercontent.com/d/${imageData.link}`;
-    if(imageData.sub_image_description === "") {
+    if(imageData.title === "") {
         text.style.display = "none";
     } else {
-        text.innerText = imageData.sub_image_description;
+        text.innerText = imageData.title;
     }
     modalImageLink = imageData.link;
 }

@@ -1,19 +1,30 @@
-import { getAllProjects, checkLoggedIn, logoutEvent } from "./firebase.mjs";
+import { getAllProjects, checkNotLoggedIn, logoutEvent } from "./firebase.mjs";
+import {sortByProjectType, sortProjectByPositionReversed} from "./components/sortingProjects.mjs";
 
-checkLoggedIn();
+checkNotLoggedIn();
 
 const logoutButton = document.querySelector(".logoutButton");
 
 logoutButton.addEventListener("click", logoutEvent);
 
-const allProjects = await getAllProjects();
+const allProjectsUnsorted = await getAllProjects();
+
+const allMainProjects = sortProjectByPositionReversed(sortByProjectType("main", allProjectsUnsorted));
+const allSmallProjects = sortProjectByPositionReversed(sortByProjectType("small", allProjectsUnsorted));
+const allProjects = allSmallProjects.concat(allMainProjects);
 
 async function renderHTML(){
     const imageGrid = document.querySelector(".image-grid");
     
     for(let i=0; i<allProjects.length; i++){
         const thisObjectData = allProjects[i];
-        const firstImageData = thisObjectData.images[0];
+        
+        let firstImageData = thisObjectData.images.find((n) => n.is_first_img == true);
+        
+        if(firstImageData == undefined){
+            firstImageData = thisObjectData.images[0]; 
+        }
+        
         const formatedTitleForURL = thisObjectData.name.toLowerCase().replaceAll(" ", "_");
 
         //creating new HTML objects
@@ -33,7 +44,21 @@ async function renderHTML(){
         projectInfo.appendChild(projectTitle);
         projectInfo.appendChild(projectDescription);
         newClickableProject.appendChild(projectInfo);
-        imageGrid.prepend(newClickableProject);
+        imageGrid.prepend(newClickableProject); 
+        
+        //Adding tags on smaller projects
+        if(thisObjectData.project_type != "main"){
+            const projectTag = document.createElement("p");
+            projectTag.className = "project-tag";
+            projectTag.innerText = thisObjectData.project_type;
+            projectInfo.appendChild(projectTag);
+        }
+
+        //Adding number to projects
+        const numberTag = document.createElement("p");
+            numberTag.className = "number-tag";
+            numberTag.innerText = "#" + thisObjectData.project_position;
+            projectInfo.appendChild(numberTag);
         
     }
     

@@ -56,6 +56,7 @@ function loginEvent(email, password) {
       const errorCode = error.code;
       const errorMessage = error.message;
       console.error(errorMessage);
+      alert("Email or password incorrect");
     })
 }
 
@@ -68,7 +69,7 @@ function logoutEvent() {
   })
 }
 
-function checkLoggedIn() {
+function checkNotLoggedIn() {
   const auth = getAuth(app);
 
   onAuthStateChanged(auth, (user) => {
@@ -76,6 +77,18 @@ function checkLoggedIn() {
       return
     } else {
       window.location.href = "/admin.html";
+    }
+  })
+}
+
+function checkLoggedIn() {
+  const auth = getAuth(app);
+
+  onAuthStateChanged(auth, (user) => {
+    if(user) {
+      window.location.href = "/pages/adminMyWork.html";
+    } else {
+      return
     }
   })
 }
@@ -88,4 +101,4 @@ async function removeProject(projectID){
   await deleteDoc(doc(db, "projects", projectID));
 }
 
-export { getAllProjects, getSingleProject, loginEvent, logoutEvent, checkLoggedIn, setProject, removeProject};
+export { getAllProjects, getSingleProject, loginEvent, logoutEvent, checkLoggedIn, checkNotLoggedIn, setProject, removeProject};

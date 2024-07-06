@@ -99,7 +99,7 @@ input[type = checkbox] {
     width: 100%;
 }
 
-#project-title{
+#project-title, #short-description{
     padding-inline: 0;
     padding-left: 5px;
     width: 95%;
@@ -178,6 +178,27 @@ input[type = checkbox] {
 
 #img-container, #sub-img-container{
     margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#img-container img, #sub-img-container > img, .sub-container img{
+    object-fit: cover;
+    margin-top: 1%;
+}
+
+.sub-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub-container p{
+    margin-inline: auto;
+    padding: 15px;
+    font-size: clamp(1rem, 3vw, 1.2rem)
 }
 
 .submit-button {

@@ -1,4 +1,6 @@
-import { loginEvent } from "./firebase.mjs";
+import { loginEvent, checkLoggedIn } from "./firebase.mjs";
+
+checkLoggedIn();
 
 const loginForm = document.querySelector(".loginForm");
 

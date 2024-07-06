@@ -45,10 +45,31 @@ main{
     gap: 0.5%;
 }
 
-.image-container img, .sub-section > img, .sub-container{
+.image-container img, .sub-section > img{
     object-fit: cover;
     margin-top: 1vw;
 }
+
+.sub-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub-container img{
+    object-fit: cover;
+}
+
+.sub-container p{
+    margin-inline: auto;
+    padding: 15px;
+    font-size: clamp(1.2rem, 3vw, 1.5rem)
+}
+
+.sub-section{
+    margin-top: 0.5%;
+}
+
 
 .image-container img:hover{
     cursor: pointer;
@@ -116,6 +137,7 @@ main{
 .modal-image-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 100%;
     width: 100%;
 }
@@ -133,27 +155,6 @@ main{
     padding-inline: 10px;
     text-align: center;
 }
-
-.sub-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.sub-container img{
-    object-fit: cover;
-}
-
-.sub-container p{
-    margin-inline: auto;
-    padding: 15px;
-    font-size: clamp(1.2rem, 3vw, 1.5rem)
-}
-
-.sub-section{
-    margin-top: 0.5%;
-}
-
 
 
 @media screen and (max-width:550px) {

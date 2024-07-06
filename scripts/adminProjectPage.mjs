@@ -1,6 +1,6 @@
-import { checkLoggedIn, getSingleProject, logoutEvent, setProject, removeProject } from "./firebase.mjs";
+import { checkNotLoggedIn, getSingleProject, logoutEvent, setProject, removeProject } from "./firebase.mjs";
 
-checkLoggedIn();
+checkNotLoggedIn();
 
 const logoutButton = document.querySelector(".logoutButton");
 logoutButton.addEventListener("click", logoutEvent);
@@ -28,22 +28,19 @@ function renderHTMLButtons(){
     addBtn.addEventListener("click", addImage);
     deleteBtn.addEventListener("click", () => {
         deleteImage(mainImages, document.querySelector("#img-link").value);
+        clearImageInput();
         });
 
     subClearBtn.addEventListener("click", clearSubImageInput);
     subAddBtn.addEventListener("click", addSubImage);
     subDeleteBtn.addEventListener("click", () => {
         deleteImage(subImages, document.querySelector("#sub-img-link").value);
+        clearSubImageInput();
         });
-
 
     saveBtn.addEventListener("click", saveProject);
 
-    //create delete button
-    const deleteProjectBtn = document.createElement("button");
-    deleteProjectBtn.innerText = "Delete Project";
-    deleteProjectBtn.addEventListener("click", deleteProject);
-    document.querySelector(".top-button-container").appendChild(deleteProjectBtn);
+    
 }
 
 //Filling out input fields in html with provided project data
@@ -53,12 +50,14 @@ function fillOutFields(projectData) {
   const titleInp = document.querySelector("#project-title");
   const typeSel = document.querySelector("#project-type");
   const shortDescriptionInp = document.querySelector("#short-description");
+  const projectPos = document.querySelector("#project-position");
   const descriptionInp = document.querySelector("#project-description");
 
   titleEl.innerText = "Add changes to project";
   titleInp.value = projectData.name;
   typeSel.value = projectData.project_type;
   shortDescriptionInp.value = projectData.short_description;
+  projectPos.value = projectData.project_position;
   descriptionInp.value = projectData.description;
 
   const subTitleInp = document.querySelector("#sub-title");
@@ -83,22 +82,55 @@ function fillOutFields(projectData) {
   const subImageContainer = document.querySelector("#sub-img-container");
   updateImageContainer(imageContainer, mainImages);
   updateImageContainer(subImageContainer, subImages);
+
+  //create delete button
+  const deleteProjectBtn = document.createElement("button");
+  deleteProjectBtn.innerText = "Delete Project";
+  deleteProjectBtn.addEventListener("click", deleteProject);
+  document.querySelector(".top-button-container").appendChild(deleteProjectBtn);
 }
 
 //updating container after any changes on inputFields
 function updateImageContainer(container, imageArray) {
   container.innerHTML = "";
   for (let i = 0; i < imageArray.length; i++) {
+
     const imageData = imageArray[i];
     const image = document.createElement("img");
     image.src = `https://lh3.googleusercontent.com/d/${imageData.link}`;
     image.alt = imageData.title;
-    image.style.cursor = "pointer";
     image.style.width = imageData.width;
-    image.addEventListener("click", () => {
-      updateImageInput(imageData, container.id, i);
-    });
-    container.appendChild(image);
+
+    if(imageData.sub_image_description == ""){
+    
+      image.style.cursor = "pointer";
+      image.addEventListener("click", () => {
+        updateImageInput(imageData, container.id, i);
+      });
+      container.appendChild(image);
+
+    }else{
+      const subContainer = document.createElement("container");
+      const p = document.createElement("p");
+
+      image.style.minWidth = imageData.width;
+      p.innerText = imageData.sub_image_description;
+      subContainer.className = "sub-container";
+      subContainer.style.cursor = "pointer";
+      subContainer.addEventListener("click", () => {
+        updateImageInput(imageData, container.id, i);
+      });
+      //odd or even num:
+      if(i%2 == 0){
+        subContainer.appendChild(p);
+        subContainer.appendChild(image);
+      }else{
+        subContainer.appendChild(image);
+        subContainer.appendChild(p);
+      }
+      container.appendChild(subContainer);
+    }
+  
   }
 }
 
@@ -110,14 +142,24 @@ function updateImageInput(imageData, containerID, position) {
   let posInp;
   let frontImgChck;
   if (containerID == "sub-img-container") {
+    //scroll to input container
+    document.querySelector(".sub-img-input").scrollIntoView();
+
     clearSubImageInput()
+    
     titleInp = document.querySelector("#sub-img-title");
     googleIDInp = document.querySelector("#sub-img-link");
     widthInp = document.querySelector("#sub-img-width");
     posInp = document.querySelector("#sub-img-position");
     frontImgChck = document.querySelector("#sub-is-first-img");
+    const subImgDesc = document.querySelector("#sub-img-description");
+    subImgDesc.value = imageData.sub_image_description;
   } else {
+    //scroll to input container
+    document.querySelector(".img-input").scrollIntoView();
+
     clearImageInput();
+    
     titleInp = document.querySelector("#img-title");
     googleIDInp = document.querySelector("#img-link");
     widthInp = document.querySelector("#img-width");
@@ -150,6 +192,7 @@ function clearSubImageInput() {
     document.querySelector("#sub-img-width").value = "";
     document.querySelector("#sub-img-position").value = 0;
     document.querySelector("#sub-is-first-img").checked = false;
+    document.querySelector("#sub-img-description").value = "";
 }
 
 //add functions
@@ -162,9 +205,11 @@ function addObjectToArray(array, title, link, width, position, isFirst, subImage
     image.sub_image_description = subImageDesc;
 
     if(position-1 > array.length){
-        array.splice(array.length-1, 0, image);
+        array.splice(array.length, 0, image);
+    }else{
+      array.splice(position-1, 0, image);
     }
-    array.splice(position-1, 0, image);
+    
 }
 
 function addImage(){
@@ -227,6 +272,7 @@ function saveProject(){
     const titleVal = document.querySelector("#project-title").value;
     const typeVal = document.querySelector("#project-type").value;
     const shortDescriptionVal = document.querySelector("#short-description").value;
+    const projectPosVal = document.querySelector("#project-position").value;
     const descriptionVal = document.querySelector("#project-description").value;
     const subTitleVal = document.querySelector("#sub-title").value;
     const subDescriptionVal = document.querySelector("#sub-description").value;
@@ -237,6 +283,7 @@ function saveProject(){
     projectObject.short_description = shortDescriptionVal;
     projectObject.description = descriptionVal;
     projectObject.project_type = typeVal;
+    projectObject.project_position = projectPosVal;
     projectObject.sub_title = subTitleVal;
     projectObject.sub_description = subDescriptionVal;
     projectObject.amount_img_part_of_sub = subImages.length;
@@ -250,7 +297,9 @@ function saveProject(){
     
     try{
       setProject(projectID, projectObject);
-      window.location.href = "./adminMyWork.js";
+      setTimeout(() => {
+        window.location.href = "./adminMyWork.html";
+      }, 2000);
     }catch{
       alert("Something went wrong. Could not save project");
     }
@@ -264,7 +313,9 @@ function deleteProject(){
 
         try{
           removeProject(projectID);
-          window.location.href = "./adminMyWork.js";
+          setTimeout(() => {
+            window.location.href = "./adminMyWork.html";
+          }, 2000);
         }catch{
           alert("Something went wrong. Could not remove project");
         }

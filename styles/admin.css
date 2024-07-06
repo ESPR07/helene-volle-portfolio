@@ -47,6 +47,8 @@ main {
     height: 25px;
     font-size: 1.1rem;
     padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 
 .loginButton {
@@ -98,5 +100,9 @@ main {
     .index-image {
         height: 100%;
         width: 100%;
+    }
+
+    a{
+        color:var(--active-color);
     }
 }

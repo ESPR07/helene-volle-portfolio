@@ -132,6 +132,10 @@ main {
         color: var(--background);
     }
 
+    .logo{
+        background-image: url("../assets/icons/helene-logo-nosplash.png");
+    }
+
     .navigation-container a {
         background-color: var(--background);
         color: var(--content-color);
@@ -162,6 +166,8 @@ main {
     .credits a {
         color: var(--background);
     }
+
+    
 }
 
 

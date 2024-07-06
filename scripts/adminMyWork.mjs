@@ -14,15 +14,12 @@ async function renderHTML(){
     for(let i=0; i<allProjects.length; i++){
         const thisObjectData = allProjects[i];
         
-        let firstImageData;
-       
-        try{
-            firstImageData = thisObjectData.images.find((n) => n.is_first_img == true);
-        }catch (error){
-            firstImageData = thisObjectData.images[0];
+        let firstImageData = thisObjectData.images.find((n) => n.is_first_img == true);
+        
+        if(firstImageData == undefined){
+            firstImageData = thisObjectData.images[0]; 
         }
-
-
+        
         const formatedTitleForURL = thisObjectData.name.toLowerCase().replaceAll(" ", "_");
 
         //creating new HTML objects

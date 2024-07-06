@@ -4,12 +4,12 @@ import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_API_KEY,
-  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_APP_ID
+  apiKey: "AIzaSyDllgPyI1tjBDjE6ZxyO0Yeyf7mkKY9EG0",
+  authDomain: "helene-volle-portfolio.firebaseapp.com",
+  projectId: "helene-volle-portfolio",
+  storageBucket: "helene-volle-portfolio.appspot.com",
+  messagingSenderId: "994726005931",
+  appId: "1:994726005931:web:ef12d00c13c019b7f0fbee"
 };
 
 // Initialize Firebase

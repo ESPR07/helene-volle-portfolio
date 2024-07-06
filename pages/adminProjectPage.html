@@ -33,10 +33,15 @@
             <option value="main">Main Project</option>
             <option value="small">Smaller Project</option>
           </select>
+          
+          
+          <label for="short-description">Short Description:</label>
+          <label for="project-position">Project position:</label>
+        <input type="text" placeholder="short-description" id="short-description" />
+        <input type="number" min="1" placeholder="project position" id="project-position" />
         </container>
 
-        <label for="short-description">Short Description:</label>
-        <input type="text" placeholder="short-description" id="short-description" />
+        
 
         <label for="project-description">Description:</label>
         <textarea placeholder="Description" id="project-description"></textarea>
@@ -55,7 +60,7 @@
           <input type="text" placeholder="Width" id="img-width" />
 
           <label for="img-position" class="position-label">Position:</label>
-          <input type="number" placeholder="Position" id="img-position" />
+          <input type="number" min="1" placeholder="Position" id="img-position" />
 
           <container class="checkbox-container">
             <label for="is-first-img">front page image</label>
@@ -97,7 +102,7 @@
           <input type="text" placeholder="Width" id="sub-img-width" />
 
           <label for="img-position" class="position-label">Position:</label>
-          <input type="number" placeholder="Position" id="sub-img-position" />
+          <input type="number" placeholder="Position" min="1" id="sub-img-position" />
 
           <container class="checkbox-container">
             <label for="is-first-img">front page image</label>

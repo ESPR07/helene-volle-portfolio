@@ -56,6 +56,7 @@ function loginEvent(email, password) {
       const errorCode = error.code;
       const errorMessage = error.message;
       console.error(errorMessage);
+      alert("Email or password incorrect");
     })
 }
 

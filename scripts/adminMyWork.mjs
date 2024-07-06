@@ -13,7 +13,16 @@ async function renderHTML(){
     
     for(let i=0; i<allProjects.length; i++){
         const thisObjectData = allProjects[i];
-        const firstImageData = thisObjectData.images[0];
+        
+        let firstImageData;
+       
+        try{
+            firstImageData = thisObjectData.images.find((n) => n.is_first_img == true);
+        }catch (error){
+            firstImageData = thisObjectData.images[0];
+        }
+
+
         const formatedTitleForURL = thisObjectData.name.toLowerCase().replaceAll(" ", "_");
 
         //creating new HTML objects
@@ -42,6 +51,12 @@ async function renderHTML(){
             projectTag.innerText = thisObjectData.project_type;
             projectInfo.appendChild(projectTag);
         }
+
+        //Adding number to projects
+        const numberTag = document.createElement("p");
+            numberTag.className = "number-tag";
+            numberTag.innerText = "#" + thisObjectData.project_position;
+            projectInfo.appendChild(numberTag);
         
     }
     

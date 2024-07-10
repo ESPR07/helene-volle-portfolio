@@ -12,7 +12,7 @@ const ID = param.get("id");
 let mainImages = [];
 let subImages = [];
 
-function renderHTMLButtons(){
+function appendButtonEvents(){
     
     const clearBtn = document.querySelector("#clear-button");
     const addBtn = document.querySelector("#add-button");
@@ -330,4 +330,4 @@ if (ID) {
   fillOutFields(projectData);
 } 
 
-renderHTMLButtons();
+appendButtonEvents();

@@ -33,6 +33,9 @@ resetPasswordLink.addEventListener("click", (e) => {
     loginButton.addEventListener("click", (e) => {
         e.preventDefault();
         resetPassword(emailField.value);
+        setTimeout(() => {
+            window.location.reload();
+        }, 1500)
 
     })
 })

@@ -1,6 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js";
 import { getFirestore, collection, getDocs, getDoc, doc, setDoc, deleteDoc } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.js";
-import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
+import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut, sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-auth.js";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -101,4 +101,16 @@ async function removeProject(projectID){
   await deleteDoc(doc(db, "projects", projectID));
 }
 
-export { getAllProjects, getSingleProject, loginEvent, logoutEvent, checkLoggedIn, checkNotLoggedIn, setProject, removeProject};
+async function resetPassword(email) {
+  const auth = getAuth();
+sendPasswordResetEmail(auth, email)
+  .then(() => {
+    "Password reset mail sent!";
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+  });
+}
+
+export { getAllProjects, getSingleProject, loginEvent, logoutEvent, checkLoggedIn, checkNotLoggedIn, setProject, removeProject, resetPassword};

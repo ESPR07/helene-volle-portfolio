@@ -19,16 +19,19 @@
     <section class="info">
       <h1>Admin Page</h1>
 
-      <p>Please log in to access.</p>
+      <p class="admin-sub-header">Please log in to access.</p>
 
       <form class="loginForm">
         <label for="email">Email:</label>
         <input type="email" placeholder="Email" id="email">
-        <label for="password">Password:</label>
+        <label for="password" id="password-label">Password:</label>
         <input type="password" placeholder="Password" id="password">
         <button type="submit" class="loginButton">Log in</button>
       </form>
-      <a href="/" class="return-link">Return to portfolio</a>
+      <container class="link-container">
+        <a href="/" class="return-link">Return to portfolio</a>
+        <a href="#" class="reset-password-link">Reset password</a>
+      </container>
 
     </section>
   </main>

@@ -68,7 +68,11 @@ main {
     cursor: pointer;
 }
 
-.return-link {
+.link-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
     margin-top: 10px;
 }
 

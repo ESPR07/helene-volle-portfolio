@@ -24,8 +24,17 @@ main {
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 20%;
+    top: 100px;
     z-index: 1;
+}
+
+.helene-big-logo{
+    height: 100px;
+    width: 100px;
+    background-image: url("../assets/icons/helene-logo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .fade-out{
@@ -46,10 +55,12 @@ main {
 
 .greeting-box h1 {
     font-size: clamp(1.3rem, 5vw, 2.5rem);
+    margin-bottom: 10px;
 }
 
 .greeting-box p {
     font-size: clamp(1rem, 3vw, 1.3rem);
+    margin-bottom: 20px;
 }
 
 .greeting-box button {
@@ -179,7 +190,7 @@ main {
 
 @media screen and (max-width: 900px) {
     .greeting-box {
-        top: 15%;
+        top: 70px;
     }
 
     .image-grid {
@@ -203,6 +214,10 @@ main {
 }
 
 @media screen and (max-width: 500px) {
+    .greeting-box {
+        top: 100px;
+    }
+
     .image-grid {
         grid-template-columns: repeat(1, 1fr);
     }

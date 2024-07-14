@@ -14,18 +14,17 @@ main {
 
 .info h1 {
     font-size: clamp(1.7rem, 5vw, 2.5rem);
+    margin-bottom: 0;
 }
 
 .info p {
     font-size: clamp(1rem, 3vw, 1.2rem);
+    max-width: 400px;
+    text-align: center;
 }
 
-.info p:first-of-type {
-    margin-bottom: 0;
-}
-
-.info p:last-of-type {
-    margin-bottom: 40px;
+.info-text{
+    margin-bottom: 100px;
 }
 
 .logo {
@@ -39,7 +38,7 @@ main {
 
 .navigation-container {
     display: flex;
-    margin-bottom: 90px;
+    margin-bottom: 30px;
     gap: 10px;
 }
 
@@ -64,6 +63,7 @@ main {
 .socials-container {
     display: flex;
     gap: 40px;
+    margin-bottom: 30px;
 }
 
 .socials-container a {

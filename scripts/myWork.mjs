@@ -1,5 +1,8 @@
 import { getAllProjects } from "./firebase.mjs";
 import { sortProjectByPosition} from "./components/sortingProjects.mjs";
+import { renderFooter } from "./components/footer.mjs";
+
+renderFooter();
 
 const allProjects = await getAllProjects();
 

@@ -1,4 +1,5 @@
 import { getSingleProject } from "./firebase.mjs";
+import { renderFooter } from "./components/footer.mjs";
 
 const fetchID = document.location.search;
 const param = new URLSearchParams(fetchID);
@@ -175,6 +176,7 @@ function displayModal(imageData){
 
 
 renderHTML();
+renderFooter();
 
 
 

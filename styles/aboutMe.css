@@ -66,6 +66,10 @@ article p, article ul li{
     text-align: start;
 }
 
+.artForms {
+    display: flex;
+}
+
 @media screen and (max-width:550px) {
     .grid-container{
         grid-template-columns: repeat(1, 1fr);

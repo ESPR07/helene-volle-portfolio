@@ -1,6 +1,9 @@
 # Helene Volle Portfolio
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9bdf35ac-379a-47b2-961c-45c5e5e3c41e/deploy-status)](https://app.netlify.com/sites/helene-portfolio/deploys)
 
+<img width="2628" height="1498" alt="bilde" src="https://github.com/user-attachments/assets/fb5f7736-f91a-40be-b217-363f0d67c13f" />
+
+
 ## Endre prosjekter:
 
 Prosjekter og bilder legges til i info.json filen som ligger i scripts/fakeAPI/info.json.

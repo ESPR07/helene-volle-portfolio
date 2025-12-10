@@ -1,81 +1,135 @@
 # Helene Volle Portfolio
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9bdf35ac-379a-47b2-961c-45c5e5e3c41e/deploy-status)](https://app.netlify.com/sites/helene-portfolio/deploys)
 
+## Overview
+
+- [Screenshots](#screenshots) 
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Project-structure](#project-structure)
+- [Setup](#setup--run-locally)
+- [Collaborators](#collaborators)
+- [Highlights](#highlights--learnings)
+- [License](#license)
+
+---
+
+🔗 **Live site:** https://helenevolle.com/  
+
+A custom-coded portfolio built for artist **Helene Backe Volle** to professionally showcase her artwork.  
+The project was designed and implemented collaboratively and deployed on a tight deadline so she could submit it alongside her master’s program application in 2024.
+
+---
+
+## Screenshots
 <img width="2628" height="1498" alt="bilde" src="https://github.com/user-attachments/assets/fb5f7736-f91a-40be-b217-363f0d67c13f" />
 
+---
 
-## Endre prosjekter:
+## Features
 
-Prosjekter og bilder legges til i info.json filen som ligger i scripts/fakeAPI/info.json.
+✔ Real-world commissioned project  
+✔ Admin dashboard for content management  
+✔ Firebase integration  
+✔ Responsive gallery layout  
+✔ Designed collaboratively with client input  
 
-<b>Struktur i json filen:</b>
-- Krøllparanteser { } samler informasjon som skal ligge sammen. Vi bruker disse til å samle prosjektinformasjon og bildeinformasjon.
-- <b>VIKTIG!</b> Alle krøllparanteser separeres med komma { info } , { info } , { info } . Dvs alle krøllparanteser skal ha komma etter seg (med unntak av det siste). <b>Ikke føkk med komma ellers føkker de med deg.</b> Sindre og jeg har "spellchecker" for kode som viser hvor feilen er hvis det blir kommakrise :)
-- Innrykk og mellomrom har ingen invirking på koden
-- Første bilde i hvert prosjekt er hovedbilde på work siden og vises ikke på prosjektsiden. Dette bildet trenger derfor ikke width.
+---
 
-## Legge til bilder
-- Bildet burde være under 500KB . Det kan gjøres ved å sette width til 2560px og lagre bildet som .webp
-- Dersom du har oppretter prosjektet fra før kan du finne mappa bildet skal legges i her: assets/images/prosjektnavn. Deretter må du endre inn i json filen (/scripts/fakeAPI/info.json), finne stedet prosjektet er listet og legge til koden under der du vil plassere bildet:
+## Tech Stack
+
+| Category | Technologies |
+|----------|--------------|
+| **Frontend** | HTML, CSS, JavaScript |
+| **Hosting / Backend** | Firebase |
+| **Tools** | Netlify, Git, VS Code, Figma |
+
+---
+
+## Project Structure
 ```
-{
-    "link": "/assets/images/colours_on_micro_level/01.webp",
-    "title": "Title",
-    "width": "100%",
-    "sub_image_description": "-"
-    
-}
+📦 helene-volle-portfolio
+┣ 📂 assets/icons
+┣ 📂 pages
+┃ ┣ aboutMe.html
+┃ ┣ adminAboutMe.html
+┃ ┣ adminMyWork.html
+┃ ┣ adminProjectPage.html
+┃ ┣ myWork.html
+┃ ┗ projectPage.html
+┣ 📂 scripts
+┃ ┣ 📂 components
+┃ ┃ ┣ about.js
+┃ ┣ admin.mjs
+┣ 📂 styles
+┣ index.html
+┣ firebase.mjs
+┣ package.json
+┣ README.md
 ```
-- sub_image_description legges kun til om amount_img_part_of_sub er satt til et nummer som inkluderer bildet ditt:)
 
-## Legge til prosjekter 
-- Du får ikke opprettet nye mapper uten kodeeditor, send en mld så skal vi opprette en ny mappe med navn med små bokstaver der ordene er skilt med _
-- Bildene burde være under 500KB (se legge til bilder)
-- Gå inn i json filen og legg til koden under der du vil ha prosjektet:
+---
 
-### Kopier og endre denne koden
-```
-    ,{
-        "name": "Us",
-        "description": "This is a long and fulfilling description that explains everything about the project in it's fullness!",
-        "short_description": "This is the short description",
-        "sub_title": "-",
-        "sub_description": "-",
-        "amount_img_part_of_sub": 0,
-        "images": [
-            {
-                "link": "/assets/images/us/02.webp",
-                "title": "Title",
-                "width": "-",
-                "sub_image_description": "-"
-            },
-            {
-                "link": "/assets/images/us/02.webp",
-                "title": "Title",
-                "width": "100%",
-                "sub_image_description": "-"
-            },
-            {
-                "link": "/assets/images/us/01.webp",
-                "title": "Title",
-                "width": "100%",
-                "sub_image_description": "-"
-            }
-        ]
-    }
+## Setup & Run Locally
+
+### 1️⃣ Clone the repo
 
 ```
-Forklaringer til koden: 
-- name: overskrift på prosjekt
-- description: teksten rett under overskriften
-- short_description: det som vises i kort beskrivelse på work siden
-- sub_title: overskrift til delen under alle hovedbildene. Her kan du skrive - og overskriften forsvinner
-- sub_description: teksten under sub title
-- amount_img_part_of_sub: antall bilder (telt fra bunnen) som skal ligge i sub delen
- - Width: Første bilde har ikke width fordi det er "forsidebilde" til prosjektene, den vises ikke på prosjektsiden. 
- - Titel: er ikke nødvendig men er der for din egen del hvis du navngir noen av bildene. Det vises ikke på siden med mindre nettsiden ikke klarer å hente bildene.
- - Width: bilder som skal ligge på samme linje må ha til sammen prosentandel som tilsvarer 99% (dette uansett hvor mange bilder du skal ha på en linje). Dersom du kun skal ha ett bilde så skriv 100%
-- sub_image_description: tekst som vil stå ved siden av bildet i sub section. skriver du - så vil du kunne plassere flere bilder på samme rad og teksten forsvinner.
+git clone https://github.com/ESPR07/helene-volle-portfolio.git
+cd helene-volle-portfolio
+```
+
+### 2️⃣ Install dependencies
+```
+npm install
+```
 
 
-Ellers: hvis det er noe så bare snap meg, vi har litt bedre programmer til å fikse koden på enn du har så hvis det er noe som ikke funker bare gi beskjed. Hvis det er stress å sette opp prosjekter kan jeg og gjøre det for deg, men nå har du hvertfall mulighet til å endre på ting
+### 3️⃣ Development server
+```
+npm run dev
+```
+
+
+### 4️⃣ Build for production
+```
+npm run build
+```
+
+## Collaborators
+
+This project was developed collaboratively.
+
+| Name           | GitHub                         | Email               |
+|----------------|--------------------------------|---------------------|
+| **Sindre Derås** | https://github.com/ESPR07      | sinder009@gmail.com |
+| **Ingvild Sandven** | https://github.com/bookdragonish  | ingvild.sandven@gmail.com |
+
+---
+
+## Highlights & Learnings
+
+Key takeaways from the project:
+
+- Real commissioned work  
+- Firebase authentication and data usage  
+- Custom admin dashboard development  
+- Experience in planning and collaboration  
+- Delivery under strict deadlines  
+
+The project was intentionally built using vanilla **HTML, CSS, and JavaScript** due to familiarity at the time and time constraints before learning frameworks like React.
+
+---
+
+## License
+
+This project is licensed under the **ISC License**.
+
+---
+
+## Acknowledgements
+
+Thanks to **Helene Volle** for trusting us to build her digital artistic identity.  
+This was not only an enjoyable build but also an opportunity to grow technically and collaboratively.
+
+

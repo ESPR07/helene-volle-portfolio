@@ -69,6 +69,7 @@ function renderHTML(){
                     p.innerText = thisImageData.sub_image_description;
                     image.src = `https://lh3.googleusercontent.com/d/${thisImageData.link}`;
                     image.alt = thisImageData.title;
+                    image.loading = "lazy";
                     image.style.width = thisImageData.width;
                     image.style.minWidth = thisImageData.width;
                     image.style.cursor = "pointer";

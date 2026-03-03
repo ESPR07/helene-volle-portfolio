@@ -186,7 +186,7 @@ input[type = checkbox] {
 
 #img-container img, #sub-img-container > img, .sub-container img{
     object-fit: cover;
-    margin-top: 1%;
+    margin-top: 2%;
 }
 
 .sub-container{

@@ -37,17 +37,20 @@ main{
     margin-inline: 20%;
 }
 
+
 .image-container, .sub-section {
-    width: 100%;
+    width: 96%;
+    max-width: 1000px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 0.5%;
 }
+
 
 .image-container img, .sub-section > img{
     object-fit: cover;
-    margin-top: 1vw;
+    margin-top: 2%;
 }
 
 .sub-container{
